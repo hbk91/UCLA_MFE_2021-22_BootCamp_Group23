@@ -182,7 +182,7 @@ pprint(companies_info_final, sort_dicts=False)
 
 <div class="cell markdown" markdown="1">
 
-------------------------------------------------------------------------
+<hr style="border:2px solid black"> </hr>
 
 </div>
 
