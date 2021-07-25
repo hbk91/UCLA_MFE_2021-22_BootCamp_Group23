@@ -603,7 +603,7 @@ print('Matrix Multiplied Array: \n\n {}'.format(repr(arr_multiplied)))
 <div class="cell code" markdown="1" execution_count="18">
 
 ~~~ python
-# Calculating the Determinant of the multiplied Array & Printing it
+# Calculating & Printinggthe Determinant of the multiplied Array
 
 arr_multiplied_det = np.linalg.det(arr_multiplied)
 
