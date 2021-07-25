@@ -46,6 +46,8 @@ print('The Swapped List: {}'.format(my_list))
 
 <hr markdown="1" style="border:.05px solid black">
 
+<br />
+
 </div>
 
 <div class="cell markdown" markdown="1">
@@ -136,7 +138,7 @@ companies_info_final = {ticker :
 
 </div>
 
-<div class="cell code" markdown="1" execution_count="20">
+<div class="cell code" markdown="1" execution_count="6">
 
 ~~~ python
 # Printing the Result
@@ -183,6 +185,8 @@ pprint(companies_info_final, sort_dicts=False)
 <div class="cell markdown" markdown="1">
 
 <hr markdown="1" style="border:.05px solid black">
+
+<br />
 
 </div>
 
@@ -309,6 +313,8 @@ print('Check if the Arrays are Equal: \n\n {}'.format(array_linspace == array_ar
 
 <hr markdown="1" style="border:.05px solid black">
 
+<br />
+
 </div>
 
 <div class="cell markdown" markdown="1">
@@ -377,6 +383,8 @@ print('Variance of the Array: {:.4f}'.format(arr_uniform_rand_var))
 <div class="cell markdown" markdown="1">
 
 <hr markdown="1" style="border:.05px solid black">
+
+<br />
 
 </div>
 
@@ -452,6 +460,8 @@ print('Variances of the Array Column Wise: {}'.format(arr_uniform_rand_reshaped_
 <div class="cell markdown" markdown="1">
 
 <hr markdown="1" style="border:.05px solid black">
+
+<br />
 
 </div>
 
@@ -561,7 +571,7 @@ print('The determinant of the multiplied array is: {:.8f}'.format(arr_multiplied
 
 <div class="cell markdown" markdown="1">
 
-<br> <br> <hr style="border:1px solid black"> <h2><center>The
+<br /> <br /> <hr style="border:1px solid black"> <h2><center>The
 End.</center></h2> <hr style="border:1px solid black">
 
 </div>
