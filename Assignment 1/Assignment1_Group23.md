@@ -3,6 +3,8 @@
 <h2><center> Assignment - Module 1 </center></h2>
 <h3><center>Group 23: Aman Jindal | Yuhang Jiang | Daniel Gabriel Tan | Qining Liu </center></h3>
 
+<br><br>
+
 </div>
 
 <div class="cell markdown" markdown="1">
@@ -134,18 +136,18 @@ companies_info_final = {ticker :
 
 </div>
 
-<div class="cell code" markdown="1" execution_count="6">
+<div class="cell code" markdown="1" execution_count="20">
 
 ~~~ python
 # Printing the Result
 
-print('Dictionary of Companies: \n\n')
+print('\033[1m\t\t\033[4mDictionary of Companies:\033[0m\033[0m\n\n')
 pprint(companies_info_final, sort_dicts=False)
 ~~~
 
 <div class="output stream stdout" markdown="1">
 
-    Dictionary of Companies: 
+    		Dictionary of Companies:
 
 
     {'MSFT': {'Name': 'Microsoft Corporation',
@@ -558,8 +560,6 @@ print('The determinant of the multiplied array is: {:.8f}'.format(arr_multiplied
 </div>
 
 <div class="cell markdown" markdown="1">
-
-## --- {#---}
 
 ------------------------------------------------------------------------
 
