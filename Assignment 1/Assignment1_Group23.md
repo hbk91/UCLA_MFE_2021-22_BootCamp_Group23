@@ -82,10 +82,10 @@ tickers_list = ['MSFT', 'HD', 'LOW', 'ADBE', 'DUK']
 
 # Collating Keys in Yahoo Finance Data Corresponding to our requirements
 stock_info_reqd = {'Name':'longName',
-                        'Company_Sector':'sector', 
-                        'Price (USD)':'currentPrice', 
-                        'Market_Cap(USD_Million)':'marketCap', 
-                        'PE_Ratio':'trailingPE'}
+                    'Company_Sector':'sector', 
+                    'Price (USD)':'currentPrice', 
+                    'Market_Cap(USD_Million)':'marketCap', 
+                    'PE_Ratio':'trailingPE'}
 
 # Keys for which value needs to be converted into million
 million_conv_keys = ['Market_Cap(USD_Million)']
