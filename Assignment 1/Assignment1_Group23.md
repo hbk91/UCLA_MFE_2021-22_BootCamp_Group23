@@ -493,13 +493,31 @@ print('Variances of the Array Column Wise: {}'.format(repr(arr_uniform_rand_resh
 <div class="cell code" markdown="1" execution_count="15">
 
 ~~~ python
-# Generating a Uniform random Array
+#  Generating & Printing Uniform [0,1) random array
 
 array_size = 50 # Enter a even number
 np.random.seed(91) # Setting Seed as 91
 
 arr_rand = np.random.rand(array_size)
+print('Random Uniform Array: \n\n {}'.format(repr(arr_rand)))
+print('\nArray Dimensions: {}'.format(arr_rand.shape))
 ~~~
+
+<div class="output stream stdout" markdown="1">
+
+    Random Uniform Array: 
+
+     array([0.201 , 0.329 , 0.2965, 0.0933, 0.3331, 0.7252, 0.6524, 0.5049,
+           0.9473, 0.6274, 0.9923, 0.0761, 0.3426, 0.3069, 0.7102, 0.9173,
+           0.0809, 0.0628, 0.5822, 0.6692, 0.0093, 0.4219, 0.3954, 0.0732,
+           0.7703, 0.1894, 0.468 , 0.6517, 0.0082, 0.068 , 0.7469, 0.1575,
+           0.5348, 0.6763, 0.5196, 0.5194, 0.4658, 0.2446, 0.9115, 0.1077,
+           0.4818, 0.7487, 0.385 , 0.7519, 0.7596, 0.2879, 0.6734, 0.1756,
+           0.672 , 0.2965])
+
+    Array Dimensions: (50,)
+
+</div>
 
 </div>
 
@@ -508,34 +526,52 @@ arr_rand = np.random.rand(array_size)
 ~~~ python
 # Splitting & rehaping the Array into two parts
 
+np.random.seed(91) # Setting Seed as 91
 split_size = int(array_size/2)
 newshape = (5,5)
 
-arr_rand_part1 = arr_rand[0:split_size].reshape(newshape)
-arr_rand_part2 = arr_rand[split_size:].reshape(newshape)
+arr_rand_indexes = range(arr_rand.shape[0])
+indexes_arr1 = sorted(list(np.random.choice(a = arr_rand_indexes, size = split_size, 
+                                            replace = False, p = None)))
+indexes_arr2 = sorted(list(set(arr_rand_indexes).difference(set(indexes_arr1))))
 
-print('Array 1: \n\n {}'.format(repr(arr_rand_part1)))
+arr_rand_part1 = arr_rand[indexes_arr1].reshape(newshape)
+arr_rand_part2 = arr_rand[indexes_arr2].reshape(newshape)
+
+print('Indexes from Complete Array chosen for Array 1: \n\n {}'.format(repr(indexes_arr1)))
+print('\n\n Array 1: \n\n {}'.format(repr(arr_rand_part1)))
+print('\n\n Indexes from Complete Array chosen for Array 2: \n\n {}'.format(repr(indexes_arr2)))
 print('\n\n Array 2: \n\n {}'.format(repr(arr_rand_part2)))
 ~~~
 
 <div class="output stream stdout" markdown="1">
 
-    Array 1: 
+    Indexes from Complete Array chosen for Array 1: 
 
-     array([[0.201 , 0.329 , 0.2965, 0.0933, 0.3331],
-           [0.7252, 0.6524, 0.5049, 0.9473, 0.6274],
-           [0.9923, 0.0761, 0.3426, 0.3069, 0.7102],
-           [0.9173, 0.0809, 0.0628, 0.5822, 0.6692],
-           [0.0093, 0.4219, 0.3954, 0.0732, 0.7703]])
+     [0, 3, 4, 5, 6, 7, 8, 9, 12, 13, 15, 16, 19, 21, 23, 25, 26, 27, 31, 32, 34, 35, 39, 44, 48]
+
+
+     Array 1: 
+
+     array([[0.201 , 0.0933, 0.3331, 0.7252, 0.6524],
+           [0.5049, 0.9473, 0.6274, 0.3426, 0.3069],
+           [0.9173, 0.0809, 0.6692, 0.4219, 0.0732],
+           [0.1894, 0.468 , 0.6517, 0.1575, 0.5348],
+           [0.5196, 0.5194, 0.1077, 0.7596, 0.672 ]])
+
+
+     Indexes from Complete Array chosen for Array 2: 
+
+     [1, 2, 10, 11, 14, 17, 18, 20, 22, 24, 28, 29, 30, 33, 36, 37, 38, 40, 41, 42, 43, 45, 46, 47, 49]
 
 
      Array 2: 
 
-     array([[0.1894, 0.468 , 0.6517, 0.0082, 0.068 ],
-           [0.7469, 0.1575, 0.5348, 0.6763, 0.5196],
-           [0.5194, 0.4658, 0.2446, 0.9115, 0.1077],
-           [0.4818, 0.7487, 0.385 , 0.7519, 0.7596],
-           [0.2879, 0.6734, 0.1756, 0.672 , 0.2965]])
+     array([[0.329 , 0.2965, 0.9923, 0.0761, 0.7102],
+           [0.0628, 0.5822, 0.0093, 0.3954, 0.7703],
+           [0.0082, 0.068 , 0.7469, 0.6763, 0.4658],
+           [0.2446, 0.9115, 0.4818, 0.7487, 0.385 ],
+           [0.7519, 0.2879, 0.6734, 0.1756, 0.2965]])
 
 </div>
 
@@ -547,18 +583,18 @@ print('\n\n Array 2: \n\n {}'.format(repr(arr_rand_part2)))
 # Matrix Multiplication of the two Arrays & Printing the Results
 
 arr_multiplied = arr_rand_part1 @ arr_rand_part2
-print('The multiplied array is: \n\n {}'.format(repr(arr_multiplied)))
+print('Matrix Multiplied Array: \n\n {}'.format(repr(arr_multiplied)))
 ~~~
 
 <div class="output stream stdout" markdown="1">
 
-    The multiplied array is: 
+    Matrix Multiplied Array: 
 
-     array([[0.5787, 0.5782, 0.4739, 0.7884, 0.3862],
-           [1.5238, 1.8091, 1.4199, 2.0412, 1.3483],
-           [0.7751, 1.344 , 1.0141, 1.0799, 0.5876],
-           [0.7399, 1.3579, 0.9981, 1.0069, 0.7518],
-           [0.7793, 0.8285, 0.4919, 1.2185, 0.5464]])
+     array([[0.7427, 0.9855, 1.2378, 0.935 , 0.8424],
+           [0.5454, 1.1445, 1.3502, 1.1477, 1.6034],
+           [0.4706, 0.7703, 1.6634, 0.8831, 1.2096],
+           [0.5377, 0.6704, 1.1151, 0.852 , 1.0178],
+           [0.8956, 1.3497, 1.4193, 1.0045, 1.3109]])
 
 </div>
 
@@ -571,12 +607,12 @@ print('The multiplied array is: \n\n {}'.format(repr(arr_multiplied)))
 
 arr_multiplied_det = np.linalg.det(arr_multiplied)
 
-print('The determinant of the multiplied array is: {:.8f}'.format(arr_multiplied_det))
+print('Determinant of the multiplied array: {:.8f}'.format(arr_multiplied_det))
 ~~~
 
 <div class="output stream stdout" markdown="1">
 
-    The determinant of the multiplied array is: 0.00009735
+    Determinant of the multiplied array: 0.02364653
 
 </div>
 
