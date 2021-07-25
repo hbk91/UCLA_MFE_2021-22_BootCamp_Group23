@@ -571,7 +571,13 @@ print('The determinant of the multiplied array is: {:.8f}'.format(arr_multiplied
 
 <div class="cell markdown" markdown="1">
 
-<br /><br /> <hr style="border:1px solid black">
+<br /><br />
+
+</div>
+
+<div class="cell markdown" markdown="1">
+
+<hr markdown="1" style="border:1px solid black">
 
 </div>
 
