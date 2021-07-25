@@ -1,3 +1,25 @@
+---
+jupyter:
+  interpreter:
+    hash: b3ba2566441a7c06988d0923437866b63cedc61552a5af99d1f4fb67d367b25f
+  kernelspec:
+    display_name: Python 3.8.8 64-bit (conda)
+    name: python3
+  language_info:
+    codemirror_mode:
+      name: ipython
+      version: 3
+    file_extension: .py
+    mimetype: text/x-python
+    name: python
+    nbconvert_exporter: python
+    pygments_lexer: ipython3
+    version: 3.8.8
+  nbformat: 4
+  nbformat_minor: 2
+  orig_nbformat: 4
+---
+
 ::: {.cell .markdown}
 ```{=html}
 <h1><center> UCLA Anderson MFE (2021-22) BootCamp </center></h1>
