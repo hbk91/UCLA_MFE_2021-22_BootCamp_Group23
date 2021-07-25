@@ -20,7 +20,7 @@
 
 </div>
 
-<div class="cell code" markdown="1" execution_count="1">
+<div class="cell code" markdown="1" execution_count="21">
 
 ~~~ python
 my_list = [3,4,5,7,8]
@@ -32,7 +32,7 @@ def swap_list_elements(list, pos1, pos2):
 swap_list_elements(my_list, 0, len(my_list) - 1)
 swap_list_elements(my_list, 1, len(my_list) - 2)
 
-print('The Swapped List: {}'.format(my_list))
+print('The Swapped List: {}'.format(repr(my_list)))
 ~~~
 
 <div class="output stream stdout" markdown="1">
@@ -139,18 +139,18 @@ companies_info_final = {ticker :
 
 </div>
 
-<div class="cell code" markdown="1" execution_count="6">
+<div class="cell code" markdown="1" execution_count="22">
 
 ~~~ python
 # Printing the Result
 
-print('\033[1m\t\t\033[4mDictionary of Companies:\033[0m\033[0m\n\n')
+print('\033[1m\t\t\033[4mDictionary of Companies\033[0m\033[0m\n\n')
 pprint(companies_info_final, sort_dicts=False)
 ~~~
 
 <div class="output stream stdout" markdown="1">
 
-    		Dictionary of Companies:
+    		Dictionary of Companies
 
 
     {'MSFT': {'Name': 'Microsoft Corporation',
@@ -214,7 +214,7 @@ np.set_printoptions(precision=4) # To Print Values till 4 decimal places
 
 </div>
 
-<div class="cell code" markdown="1" execution_count="8">
+<div class="cell code" markdown="1" execution_count="19">
 
 ~~~ python
 # Creating & Printing Linspace Array
@@ -226,30 +226,32 @@ array_size = 101
 array_linspace = np.linspace(start = start, stop = stop,
                             num = array_size, endpoint = False, dtype = float)
 
-print('Linspace Array: \n\n {}'.format(array_linspace))
+print('Linspace Array: \n\n {}'.format(repr(array_linspace)))
 ~~~
 
 <div class="output stream stdout" markdown="1">
 
     Linspace Array: 
 
-     [0.     0.099  0.198  0.297  0.396  0.495  0.5941 0.6931 0.7921 0.8911
-     0.9901 1.0891 1.1881 1.2871 1.3861 1.4851 1.5842 1.6832 1.7822 1.8812
-     1.9802 2.0792 2.1782 2.2772 2.3762 2.4752 2.5743 2.6733 2.7723 2.8713
-     2.9703 3.0693 3.1683 3.2673 3.3663 3.4653 3.5644 3.6634 3.7624 3.8614
-     3.9604 4.0594 4.1584 4.2574 4.3564 4.4554 4.5545 4.6535 4.7525 4.8515
-     4.9505 5.0495 5.1485 5.2475 5.3465 5.4455 5.5446 5.6436 5.7426 5.8416
-     5.9406 6.0396 6.1386 6.2376 6.3366 6.4356 6.5347 6.6337 6.7327 6.8317
-     6.9307 7.0297 7.1287 7.2277 7.3267 7.4257 7.5248 7.6238 7.7228 7.8218
-     7.9208 8.0198 8.1188 8.2178 8.3168 8.4158 8.5149 8.6139 8.7129 8.8119
-     8.9109 9.0099 9.1089 9.2079 9.3069 9.4059 9.505  9.604  9.703  9.802
-     9.901 ]
+     array([0.    , 0.099 , 0.198 , 0.297 , 0.396 , 0.495 , 0.5941, 0.6931,
+           0.7921, 0.8911, 0.9901, 1.0891, 1.1881, 1.2871, 1.3861, 1.4851,
+           1.5842, 1.6832, 1.7822, 1.8812, 1.9802, 2.0792, 2.1782, 2.2772,
+           2.3762, 2.4752, 2.5743, 2.6733, 2.7723, 2.8713, 2.9703, 3.0693,
+           3.1683, 3.2673, 3.3663, 3.4653, 3.5644, 3.6634, 3.7624, 3.8614,
+           3.9604, 4.0594, 4.1584, 4.2574, 4.3564, 4.4554, 4.5545, 4.6535,
+           4.7525, 4.8515, 4.9505, 5.0495, 5.1485, 5.2475, 5.3465, 5.4455,
+           5.5446, 5.6436, 5.7426, 5.8416, 5.9406, 6.0396, 6.1386, 6.2376,
+           6.3366, 6.4356, 6.5347, 6.6337, 6.7327, 6.8317, 6.9307, 7.0297,
+           7.1287, 7.2277, 7.3267, 7.4257, 7.5248, 7.6238, 7.7228, 7.8218,
+           7.9208, 8.0198, 8.1188, 8.2178, 8.3168, 8.4158, 8.5149, 8.6139,
+           8.7129, 8.8119, 8.9109, 9.0099, 9.1089, 9.2079, 9.3069, 9.4059,
+           9.505 , 9.604 , 9.703 , 9.802 , 9.901 ])
 
 </div>
 
 </div>
 
-<div class="cell code" markdown="1" execution_count="9">
+<div class="cell code" markdown="1" execution_count="20">
 
 ~~~ python
 # Creating & Printing Arange Array
@@ -261,50 +263,55 @@ step_size = (stop - start)/array_size
 
 array_arange = np.arange(start = start, stop = stop, step = step_size, dtype = float)
 
-print('Arange Array: \n\n {}'.format(array_arange))
+print('Arange Array: \n\n {}'.format(repr(array_arange)))
 ~~~
 
 <div class="output stream stdout" markdown="1">
 
     Arange Array: 
 
-     [0.     0.099  0.198  0.297  0.396  0.495  0.5941 0.6931 0.7921 0.8911
-     0.9901 1.0891 1.1881 1.2871 1.3861 1.4851 1.5842 1.6832 1.7822 1.8812
-     1.9802 2.0792 2.1782 2.2772 2.3762 2.4752 2.5743 2.6733 2.7723 2.8713
-     2.9703 3.0693 3.1683 3.2673 3.3663 3.4653 3.5644 3.6634 3.7624 3.8614
-     3.9604 4.0594 4.1584 4.2574 4.3564 4.4554 4.5545 4.6535 4.7525 4.8515
-     4.9505 5.0495 5.1485 5.2475 5.3465 5.4455 5.5446 5.6436 5.7426 5.8416
-     5.9406 6.0396 6.1386 6.2376 6.3366 6.4356 6.5347 6.6337 6.7327 6.8317
-     6.9307 7.0297 7.1287 7.2277 7.3267 7.4257 7.5248 7.6238 7.7228 7.8218
-     7.9208 8.0198 8.1188 8.2178 8.3168 8.4158 8.5149 8.6139 8.7129 8.8119
-     8.9109 9.0099 9.1089 9.2079 9.3069 9.4059 9.505  9.604  9.703  9.802
-     9.901 ]
+     array([0.    , 0.099 , 0.198 , 0.297 , 0.396 , 0.495 , 0.5941, 0.6931,
+           0.7921, 0.8911, 0.9901, 1.0891, 1.1881, 1.2871, 1.3861, 1.4851,
+           1.5842, 1.6832, 1.7822, 1.8812, 1.9802, 2.0792, 2.1782, 2.2772,
+           2.3762, 2.4752, 2.5743, 2.6733, 2.7723, 2.8713, 2.9703, 3.0693,
+           3.1683, 3.2673, 3.3663, 3.4653, 3.5644, 3.6634, 3.7624, 3.8614,
+           3.9604, 4.0594, 4.1584, 4.2574, 4.3564, 4.4554, 4.5545, 4.6535,
+           4.7525, 4.8515, 4.9505, 5.0495, 5.1485, 5.2475, 5.3465, 5.4455,
+           5.5446, 5.6436, 5.7426, 5.8416, 5.9406, 6.0396, 6.1386, 6.2376,
+           6.3366, 6.4356, 6.5347, 6.6337, 6.7327, 6.8317, 6.9307, 7.0297,
+           7.1287, 7.2277, 7.3267, 7.4257, 7.5248, 7.6238, 7.7228, 7.8218,
+           7.9208, 8.0198, 8.1188, 8.2178, 8.3168, 8.4158, 8.5149, 8.6139,
+           8.7129, 8.8119, 8.9109, 9.0099, 9.1089, 9.2079, 9.3069, 9.4059,
+           9.505 , 9.604 , 9.703 , 9.802 , 9.901 ])
 
 </div>
 
 </div>
 
-<div class="cell code" markdown="1" execution_count="10">
+<div class="cell code" markdown="1" execution_count="23">
 
 ~~~ python
 # Validating if the Linspace & Arange Arrays are Equal
 
-print('Check if the Arrays are Equal: \n\n {}'.format(array_linspace == array_arange))
+print('Check if the Arrays are Equal: \n\n {}'.format(repr(array_linspace == array_arange)))
 ~~~
 
 <div class="output stream stdout" markdown="1">
 
     Check if the Arrays are Equal: 
 
-     [ True  True  True  True  True  True  True  True  True  True  True  True
-      True  True  True  True  True  True  True  True  True  True  True  True
-      True  True  True  True  True  True  True  True  True  True  True  True
-      True  True  True  True  True  True  True  True  True  True  True  True
-      True  True  True  True  True  True  True  True  True  True  True  True
-      True  True  True  True  True  True  True  True  True  True  True  True
-      True  True  True  True  True  True  True  True  True  True  True  True
-      True  True  True  True  True  True  True  True  True  True  True  True
-      True  True  True  True  True]
+     array([ True,  True,  True,  True,  True,  True,  True,  True,  True,
+            True,  True,  True,  True,  True,  True,  True,  True,  True,
+            True,  True,  True,  True,  True,  True,  True,  True,  True,
+            True,  True,  True,  True,  True,  True,  True,  True,  True,
+            True,  True,  True,  True,  True,  True,  True,  True,  True,
+            True,  True,  True,  True,  True,  True,  True,  True,  True,
+            True,  True,  True,  True,  True,  True,  True,  True,  True,
+            True,  True,  True,  True,  True,  True,  True,  True,  True,
+            True,  True,  True,  True,  True,  True,  True,  True,  True,
+            True,  True,  True,  True,  True,  True,  True,  True,  True,
+            True,  True,  True,  True,  True,  True,  True,  True,  True,
+            True,  True])
 
 </div>
 
@@ -330,7 +337,7 @@ print('Check if the Arrays are Equal: \n\n {}'.format(array_linspace == array_ar
 
 </div>
 
-<div class="cell code" markdown="1" execution_count="11">
+<div class="cell code" markdown="1" execution_count="28">
 
 ~~~ python
 # Generating & Printing Uniform [0,1) random array
@@ -339,17 +346,21 @@ array_size = 50
 np.random.seed(91) # Setting Seed as 91
 
 arr_uniform_rand = np.random.rand(array_size)
-print(arr_uniform_rand)
+print('Random Uniform Array: \n\n {}'.format(repr(arr_uniform_rand)))
 print('\nArray Dimensions: {}'.format(arr_uniform_rand.shape))
 ~~~
 
 <div class="output stream stdout" markdown="1">
 
-    [0.201  0.329  0.2965 0.0933 0.3331 0.7252 0.6524 0.5049 0.9473 0.6274
-     0.9923 0.0761 0.3426 0.3069 0.7102 0.9173 0.0809 0.0628 0.5822 0.6692
-     0.0093 0.4219 0.3954 0.0732 0.7703 0.1894 0.468  0.6517 0.0082 0.068
-     0.7469 0.1575 0.5348 0.6763 0.5196 0.5194 0.4658 0.2446 0.9115 0.1077
-     0.4818 0.7487 0.385  0.7519 0.7596 0.2879 0.6734 0.1756 0.672  0.2965]
+    Random Uniform Array: 
+
+     array([0.201 , 0.329 , 0.2965, 0.0933, 0.3331, 0.7252, 0.6524, 0.5049,
+           0.9473, 0.6274, 0.9923, 0.0761, 0.3426, 0.3069, 0.7102, 0.9173,
+           0.0809, 0.0628, 0.5822, 0.6692, 0.0093, 0.4219, 0.3954, 0.0732,
+           0.7703, 0.1894, 0.468 , 0.6517, 0.0082, 0.068 , 0.7469, 0.1575,
+           0.5348, 0.6763, 0.5196, 0.5194, 0.4658, 0.2446, 0.9115, 0.1077,
+           0.4818, 0.7487, 0.385 , 0.7519, 0.7596, 0.2879, 0.6734, 0.1756,
+           0.672 , 0.2965])
 
     Array Dimensions: (50,)
 
@@ -401,7 +412,7 @@ print('Variance of the Array: {:.4f}'.format(arr_uniform_rand_var))
 
 </div>
 
-<div class="cell code" markdown="1" execution_count="13">
+<div class="cell code" markdown="1" execution_count="27">
 
 ~~~ python
 # Reshaping the Array to (10,5)
@@ -409,7 +420,7 @@ print('Variance of the Array: {:.4f}'.format(arr_uniform_rand_var))
 newshape = (10,5)
 
 arr_uniform_rand_reshaped = np.reshape(a = arr_uniform_rand, newshape = newshape, order = 'C')
-print('Reshaped Array: \n\n {}'.format(arr_uniform_rand_reshaped))
+print('Reshaped Array: \n\n {}'.format(repr(arr_uniform_rand_reshaped)))
 print('\n Array Dimensions: {}'.format(arr_uniform_rand_reshaped.shape)) 
 ~~~
 
@@ -417,16 +428,16 @@ print('\n Array Dimensions: {}'.format(arr_uniform_rand_reshaped.shape))
 
     Reshaped Array: 
 
-     [[0.201  0.329  0.2965 0.0933 0.3331]
-     [0.7252 0.6524 0.5049 0.9473 0.6274]
-     [0.9923 0.0761 0.3426 0.3069 0.7102]
-     [0.9173 0.0809 0.0628 0.5822 0.6692]
-     [0.0093 0.4219 0.3954 0.0732 0.7703]
-     [0.1894 0.468  0.6517 0.0082 0.068 ]
-     [0.7469 0.1575 0.5348 0.6763 0.5196]
-     [0.5194 0.4658 0.2446 0.9115 0.1077]
-     [0.4818 0.7487 0.385  0.7519 0.7596]
-     [0.2879 0.6734 0.1756 0.672  0.2965]]
+     array([[0.201 , 0.329 , 0.2965, 0.0933, 0.3331],
+           [0.7252, 0.6524, 0.5049, 0.9473, 0.6274],
+           [0.9923, 0.0761, 0.3426, 0.3069, 0.7102],
+           [0.9173, 0.0809, 0.0628, 0.5822, 0.6692],
+           [0.0093, 0.4219, 0.3954, 0.0732, 0.7703],
+           [0.1894, 0.468 , 0.6517, 0.0082, 0.068 ],
+           [0.7469, 0.1575, 0.5348, 0.6763, 0.5196],
+           [0.5194, 0.4658, 0.2446, 0.9115, 0.1077],
+           [0.4818, 0.7487, 0.385 , 0.7519, 0.7596],
+           [0.2879, 0.6734, 0.1756, 0.672 , 0.2965]])
 
      Array Dimensions: (10, 5)
 
@@ -434,7 +445,7 @@ print('\n Array Dimensions: {}'.format(arr_uniform_rand_reshaped.shape))
 
 </div>
 
-<div class="cell code" markdown="1" execution_count="14">
+<div class="cell code" markdown="1" execution_count="30">
 
 ~~~ python
 # Calculating & Printing Mean, Median & Variance Column Wise
@@ -443,16 +454,16 @@ arr_uniform_rand_reshaped_mean = np.mean(a = arr_uniform_rand_reshaped, axis = 0
 arr_uniform_rand_reshaped_median = np.median(a = arr_uniform_rand_reshaped, axis = 0)
 arr_uniform_rand_reshaped_var = np.var(a = arr_uniform_rand_reshaped, ddof = 0, axis = 0)
 
-print('Means of the Array Column Wise: {}'.format(arr_uniform_rand_reshaped_mean))
-print('Medians of the Array Column Wise: {}'.format(arr_uniform_rand_reshaped_median))
-print('Variances of the Array Column Wise: {}'.format(arr_uniform_rand_reshaped_var))
+print('Means of the Array Column Wise: {}'.format(repr(arr_uniform_rand_reshaped_mean)))
+print('Medians of the Array Column Wise: {}'.format(repr(arr_uniform_rand_reshaped_median)))
+print('Variances of the Array Column Wise: {}'.format(repr(arr_uniform_rand_reshaped_var)))
 ~~~
 
 <div class="output stream stdout" markdown="1">
 
-    Means of the Array Column Wise: [0.5071 0.4074 0.3594 0.5023 0.4862]
-    Medians of the Array Column Wise: [0.5006 0.4438 0.3638 0.6271 0.5735]
-    Variances of the Array Column Wise: [0.1    0.054  0.0278 0.1127 0.0638]
+    Means of the Array Column Wise: array([0.5071, 0.4074, 0.3594, 0.5023, 0.4862])
+    Medians of the Array Column Wise: array([0.5006, 0.4438, 0.3638, 0.6271, 0.5735])
+    Variances of the Array Column Wise: array([0.1   , 0.054 , 0.0278, 0.1127, 0.0638])
 
 </div>
 
@@ -491,7 +502,7 @@ arr_rand = np.random.rand(array_size)
 
 </div>
 
-<div class="cell code" markdown="1" execution_count="16">
+<div class="cell code" markdown="1" execution_count="31">
 
 ~~~ python
 # Splitting & rehaping the Array into two parts
@@ -502,57 +513,57 @@ newshape = (5,5)
 arr_rand_part1 = arr_rand[0:split_size].reshape(newshape)
 arr_rand_part2 = arr_rand[split_size:].reshape(newshape)
 
-print('Array 1: \n\n {}'.format(arr_rand_part1))
-print('\n\n Array 2: \n\n {}'.format(arr_rand_part2))
+print('Array 1: \n\n {}'.format(repr(arr_rand_part1)))
+print('\n\n Array 2: \n\n {}'.format(repr(arr_rand_part2)))
 ~~~
 
 <div class="output stream stdout" markdown="1">
 
     Array 1: 
 
-     [[0.201  0.329  0.2965 0.0933 0.3331]
-     [0.7252 0.6524 0.5049 0.9473 0.6274]
-     [0.9923 0.0761 0.3426 0.3069 0.7102]
-     [0.9173 0.0809 0.0628 0.5822 0.6692]
-     [0.0093 0.4219 0.3954 0.0732 0.7703]]
+     array([[0.201 , 0.329 , 0.2965, 0.0933, 0.3331],
+           [0.7252, 0.6524, 0.5049, 0.9473, 0.6274],
+           [0.9923, 0.0761, 0.3426, 0.3069, 0.7102],
+           [0.9173, 0.0809, 0.0628, 0.5822, 0.6692],
+           [0.0093, 0.4219, 0.3954, 0.0732, 0.7703]])
 
 
      Array 2: 
 
-     [[0.1894 0.468  0.6517 0.0082 0.068 ]
-     [0.7469 0.1575 0.5348 0.6763 0.5196]
-     [0.5194 0.4658 0.2446 0.9115 0.1077]
-     [0.4818 0.7487 0.385  0.7519 0.7596]
-     [0.2879 0.6734 0.1756 0.672  0.2965]]
+     array([[0.1894, 0.468 , 0.6517, 0.0082, 0.068 ],
+           [0.7469, 0.1575, 0.5348, 0.6763, 0.5196],
+           [0.5194, 0.4658, 0.2446, 0.9115, 0.1077],
+           [0.4818, 0.7487, 0.385 , 0.7519, 0.7596],
+           [0.2879, 0.6734, 0.1756, 0.672 , 0.2965]])
 
 </div>
 
 </div>
 
-<div class="cell code" markdown="1" execution_count="17">
+<div class="cell code" markdown="1" execution_count="32">
 
 ~~~ python
 # Matrix Multiplication of the two Arrays & Printing the Results
 
 arr_multiplied = arr_rand_part1 @ arr_rand_part2
-print('The multiplied array is: \n\n {}'.format(arr_multiplied))
+print('The multiplied array is: \n\n {}'.format(repr(arr_multiplied)))
 ~~~
 
 <div class="output stream stdout" markdown="1">
 
     The multiplied array is: 
 
-     [[0.5787 0.5782 0.4739 0.7884 0.3862]
-     [1.5238 1.8091 1.4199 2.0412 1.3483]
-     [0.7751 1.344  1.0141 1.0799 0.5876]
-     [0.7399 1.3579 0.9981 1.0069 0.7518]
-     [0.7793 0.8285 0.4919 1.2185 0.5464]]
+     array([[0.5787, 0.5782, 0.4739, 0.7884, 0.3862],
+           [1.5238, 1.8091, 1.4199, 2.0412, 1.3483],
+           [0.7751, 1.344 , 1.0141, 1.0799, 0.5876],
+           [0.7399, 1.3579, 0.9981, 1.0069, 0.7518],
+           [0.7793, 0.8285, 0.4919, 1.2185, 0.5464]])
 
 </div>
 
 </div>
 
-<div class="cell code" markdown="1" execution_count="18">
+<div class="cell code" markdown="1" execution_count="33">
 
 ~~~ python
 # Calculating the Determinant of the multiplied Array & Printing it
