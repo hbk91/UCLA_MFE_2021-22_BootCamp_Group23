@@ -20,7 +20,7 @@
 
 </div>
 
-<div class="cell code" markdown="1" execution_count="21">
+<div class="cell code" markdown="1" execution_count="1">
 
 ~~~ python
 my_list = [3,4,5,7,8]
@@ -111,7 +111,8 @@ class Company:
     def internal_fetch_stock_info(self, ticker, stock_info_reqd, million_conv_keys):
         
         self.stock_info_dict = dict(zip(stock_info_reqd.keys(),
-                            list(map(yf.Ticker(ticker).info.get, stock_info_reqd.values()))))
+                                        list(map(yf.Ticker(ticker).info.get, 
+                                                 stock_info_reqd.values()))))
         
         for key in million_conv_keys:
             self.stock_info_dict[key] = self.stock_info_dict[key]/10**6
@@ -139,7 +140,7 @@ companies_info_final = {ticker :
 
 </div>
 
-<div class="cell code" markdown="1" execution_count="22">
+<div class="cell code" markdown="1" execution_count="6">
 
 ~~~ python
 # Printing the Result
@@ -214,7 +215,7 @@ np.set_printoptions(precision=4) # To Print Values till 4 decimal places
 
 </div>
 
-<div class="cell code" markdown="1" execution_count="19">
+<div class="cell code" markdown="1" execution_count="8">
 
 ~~~ python
 # Creating & Printing Linspace Array
@@ -251,7 +252,7 @@ print('Linspace Array: \n\n {}'.format(repr(array_linspace)))
 
 </div>
 
-<div class="cell code" markdown="1" execution_count="20">
+<div class="cell code" markdown="1" execution_count="9">
 
 ~~~ python
 # Creating & Printing Arange Array
@@ -288,7 +289,7 @@ print('Arange Array: \n\n {}'.format(repr(array_arange)))
 
 </div>
 
-<div class="cell code" markdown="1" execution_count="23">
+<div class="cell code" markdown="1" execution_count="10">
 
 ~~~ python
 # Validating if the Linspace & Arange Arrays are Equal
@@ -337,7 +338,7 @@ print('Check if the Arrays are Equal: \n\n {}'.format(repr(array_linspace == arr
 
 </div>
 
-<div class="cell code" markdown="1" execution_count="28">
+<div class="cell code" markdown="1" execution_count="11">
 
 ~~~ python
 # Generating & Printing Uniform [0,1) random array
@@ -412,7 +413,7 @@ print('Variance of the Array: {:.4f}'.format(arr_uniform_rand_var))
 
 </div>
 
-<div class="cell code" markdown="1" execution_count="27">
+<div class="cell code" markdown="1" execution_count="13">
 
 ~~~ python
 # Reshaping the Array to (10,5)
@@ -445,7 +446,7 @@ print('\n Array Dimensions: {}'.format(arr_uniform_rand_reshaped.shape))
 
 </div>
 
-<div class="cell code" markdown="1" execution_count="30">
+<div class="cell code" markdown="1" execution_count="14">
 
 ~~~ python
 # Calculating & Printing Mean, Median & Variance Column Wise
@@ -502,7 +503,7 @@ arr_rand = np.random.rand(array_size)
 
 </div>
 
-<div class="cell code" markdown="1" execution_count="31">
+<div class="cell code" markdown="1" execution_count="16">
 
 ~~~ python
 # Splitting & rehaping the Array into two parts
@@ -540,7 +541,7 @@ print('\n\n Array 2: \n\n {}'.format(repr(arr_rand_part2)))
 
 </div>
 
-<div class="cell code" markdown="1" execution_count="32">
+<div class="cell code" markdown="1" execution_count="17">
 
 ~~~ python
 # Matrix Multiplication of the two Arrays & Printing the Results
@@ -563,7 +564,7 @@ print('The multiplied array is: \n\n {}'.format(repr(arr_multiplied)))
 
 </div>
 
-<div class="cell code" markdown="1" execution_count="33">
+<div class="cell code" markdown="1" execution_count="18">
 
 ~~~ python
 # Calculating the Determinant of the multiplied Array & Printing it
