@@ -1,13 +1,25 @@
-<h1><center> UCLA Anderson MFE (2021-22) BootCamp </center></h1>
+<div class="cell markdown" markdown="1">
+
 <h2><center> Assignment - Module 1 </center></h2>
-<h3><center> Authors: Aman Jindal | Yuhang Jiang | Daniel Gabriel Tan | Qining Liu </center></h3>
+<h3><center>Group 23: Aman Jindal | Yuhang Jiang | Daniel Gabriel Tan | Qining Liu </center></h3>
 
-#### Q1. Create a list([3,4,5,7,8]) and store it in variable "my_list". The list contains 5 elements. Write a program to interchange the first and second elements with the last and second last elements respectively. The new list will be [8,7,5,4,3]. 
+</div>
 
-#### Answer 1:
+<div class="cell markdown" markdown="1">
 
+#### Q1. Create a list(\[3,4,5,7,8\]) and store it in variable "my_list". The list contains 5 elements. Write a program to interchange the first and second elements with the last and second last elements respectively. The new list will be \[8,7,5,4,3\]. {#q1-create-a-list34578-and-store-it-in-variable-my_list-the-list-contains-5-elements-write-a-program-to-interchange-the-first-and-second-elements-with-the-last-and-second-last-elements-respectively-the-new-list-will-be-87543}
 
-```python
+</div>
+
+<div class="cell markdown" markdown="1">
+
+#### Answer 1: {#answer-1}
+
+</div>
+
+<div class="cell code" markdown="1" execution_count="1">
+
+~~~ python
 my_list = [3,4,5,7,8]
 
 def swap_list_elements(list, pos1, pos2):
@@ -18,27 +30,48 @@ swap_list_elements(my_list, 0, len(my_list) - 1)
 swap_list_elements(my_list, 1, len(my_list) - 2)
 
 print('The Swapped List: {}'.format(my_list))
-```
+~~~
+
+<div class="output stream stdout" markdown="1">
 
     The Swapped List: [8, 7, 5, 4, 3]
-    
 
----
+</div>
 
-#### Q2. Create a dictionary with five stocks (any five stocks from S&P 500). The keys of the dictionary that you will have to populate are - Name, Company Sector, Price, Market Cap (USD Mn), and Price-Earnings Ratio. You should find such data on Yahoo Finance. The keys have to be strings. For example (https://finance.yahoo.com/quote/TSLA/).
+</div>
 
-#### Answer 2:
+<div class="cell markdown" markdown="1">
 
+------------------------------------------------------------------------
 
-```python
+</div>
+
+<div class="cell markdown" markdown="1">
+
+#### Q2. Create a dictionary with five stocks (any five stocks from S&P 500). The keys of the dictionary that you will have to populate are - Name, Company Sector, Price, Market Cap (USD Mn), and Price-Earnings Ratio. You should find such data on Yahoo Finance. The keys have to be strings. For example (<https://finance.yahoo.com/quote/TSLA/>). {#q2-create-a-dictionary-with-five-stocks-any-five-stocks-from-sp-500-the-keys-of-the-dictionary-that-you-will-have-to-populate-are---name-company-sector-price-market-cap-usd-mn-and-price-earnings-ratio-you-should-find-such-data-on-yahoo-finance-the-keys-have-to-be-strings-for-example-httpsfinanceyahoocomquotetsla}
+
+</div>
+
+<div class="cell markdown" markdown="1">
+
+#### Answer 2: {#answer-2}
+
+</div>
+
+<div class="cell code" markdown="1" execution_count="2">
+
+~~~ python
 # Importing Required Libraries
 
 import yfinance as yf
 from pprint import pprint
-```
+~~~
 
+</div>
 
-```python
+<div class="cell code" markdown="1" execution_count="3">
+
+~~~ python
 # List of Stocks for which we will collect data
 tickers_list = ['MSFT', 'HD', 'LOW', 'ADBE', 'DUK'] 
 
@@ -51,11 +84,13 @@ stock_info_reqd = {'Name':'longName',
 
 # Keys for which value needs to be converted into million
 million_conv_keys = ['Market_Cap(USD_Million)']
+~~~
 
-```
+</div>
 
+<div class="cell code" markdown="1" execution_count="4">
 
-```python
+~~~ python
 # Company Class for fetching the requisite data
 
 class Company:
@@ -81,10 +116,13 @@ class Company:
 
     def stock_info_keys(self):
         return self.stock_info_dict.keys()
-```
+~~~
 
+</div>
 
-```python
+<div class="cell code" markdown="1" execution_count="5">
+
+~~~ python
 # Creating Dictionary for the 5 stocks
 
 companies_info_final = {ticker :  
@@ -92,19 +130,24 @@ companies_info_final = {ticker :
                         stock_info_reqd = stock_info_reqd, 
                         million_conv_keys = million_conv_keys).external_fetch_stock_info()
                         for ticker in tickers_list}
-```
+~~~
 
+</div>
 
-```python
+<div class="cell code" markdown="1" execution_count="6">
+
+~~~ python
 # Printing the Result
 
-print('\033[1m\t\t\033[4mDictionary of Companies\033[0m\033[0m \n\n')
+print('Dictionary of Companies: \n\n')
 pprint(companies_info_final, sort_dicts=False)
-```
+~~~
 
-    [1m		[4mDictionary of Companies[0m[0m 
-    
-    
+<div class="output stream stdout" markdown="1">
+
+    Dictionary of Companies: 
+
+
     {'MSFT': {'Name': 'Microsoft Corporation',
               'Company_Sector': 'Technology',
               'Price (USD)': 289.67,
@@ -130,24 +173,43 @@ pprint(companies_info_final, sort_dicts=False)
              'Price (USD)': 104.47,
              'Market_Cap(USD_Million)': 80360.308736,
              'PE_Ratio': 59.156284}}
-    
 
----
+</div>
 
-#### Q3. Using NumPy's arange and linspace, generate the same arrays between [0,10] and the array has size of 101 elements. Check if all the elements match.
+</div>
 
-#### Answer 3:
+<div class="cell markdown" markdown="1">
 
+------------------------------------------------------------------------
 
-```python
+</div>
+
+<div class="cell markdown" markdown="1">
+
+#### Q3. Using NumPy's arange and linspace, generate the same arrays between \[0,10\] and the array has size of 101 elements. Check if all the elements match. {#q3-using-numpys-arange-and-linspace-generate-the-same-arrays-between-010-and-the-array-has-size-of-101-elements-check-if-all-the-elements-match}
+
+</div>
+
+<div class="cell markdown" markdown="1">
+
+#### Answer 3: {#answer-3}
+
+</div>
+
+<div class="cell code" markdown="1" execution_count="7">
+
+~~~ python
 # Importing Required Libraries
 
 import numpy as np
 np.set_printoptions(precision=4) # To Print Values till 4 decimal places
-```
+~~~
 
+</div>
 
-```python
+<div class="cell code" markdown="1" execution_count="8">
+
+~~~ python
 # Creating & Printing Linspace Array
 
 start = 0
@@ -158,10 +220,12 @@ array_linspace = np.linspace(start = start, stop = stop,
                             num = array_size, endpoint = False, dtype = float)
 
 print('Linspace Array: \n\n {}'.format(array_linspace))
-```
+~~~
+
+<div class="output stream stdout" markdown="1">
 
     Linspace Array: 
-    
+
      [0.     0.099  0.198  0.297  0.396  0.495  0.5941 0.6931 0.7921 0.8911
      0.9901 1.0891 1.1881 1.2871 1.3861 1.4851 1.5842 1.6832 1.7822 1.8812
      1.9802 2.0792 2.1782 2.2772 2.3762 2.4752 2.5743 2.6733 2.7723 2.8713
@@ -173,10 +237,14 @@ print('Linspace Array: \n\n {}'.format(array_linspace))
      7.9208 8.0198 8.1188 8.2178 8.3168 8.4158 8.5149 8.6139 8.7129 8.8119
      8.9109 9.0099 9.1089 9.2079 9.3069 9.4059 9.505  9.604  9.703  9.802
      9.901 ]
-    
 
+</div>
 
-```python
+</div>
+
+<div class="cell code" markdown="1" execution_count="9">
+
+~~~ python
 # Creating & Printing Arange Array
 
 start = 0
@@ -187,10 +255,12 @@ step_size = (stop - start)/array_size
 array_arange = np.arange(start = start, stop = stop, step = step_size, dtype = float)
 
 print('Arange Array: \n\n {}'.format(array_arange))
-```
+~~~
+
+<div class="output stream stdout" markdown="1">
 
     Arange Array: 
-    
+
      [0.     0.099  0.198  0.297  0.396  0.495  0.5941 0.6931 0.7921 0.8911
      0.9901 1.0891 1.1881 1.2871 1.3861 1.4851 1.5842 1.6832 1.7822 1.8812
      1.9802 2.0792 2.1782 2.2772 2.3762 2.4752 2.5743 2.6733 2.7723 2.8713
@@ -202,17 +272,23 @@ print('Arange Array: \n\n {}'.format(array_arange))
      7.9208 8.0198 8.1188 8.2178 8.3168 8.4158 8.5149 8.6139 8.7129 8.8119
      8.9109 9.0099 9.1089 9.2079 9.3069 9.4059 9.505  9.604  9.703  9.802
      9.901 ]
-    
 
+</div>
 
-```python
+</div>
+
+<div class="cell code" markdown="1" execution_count="10">
+
+~~~ python
 # Validating if the Linspace & Arange Arrays are Equal
 
 print('Check if the Arrays are Equal: \n\n {}'.format(array_linspace == array_arange))
-```
+~~~
+
+<div class="output stream stdout" markdown="1">
 
     Check if the Arrays are Equal: 
-    
+
      [ True  True  True  True  True  True  True  True  True  True  True  True
       True  True  True  True  True  True  True  True  True  True  True  True
       True  True  True  True  True  True  True  True  True  True  True  True
@@ -222,16 +298,32 @@ print('Check if the Arrays are Equal: \n\n {}'.format(array_linspace == array_ar
       True  True  True  True  True  True  True  True  True  True  True  True
       True  True  True  True  True  True  True  True  True  True  True  True
       True  True  True  True  True]
-    
 
----
+</div>
 
-#### Q4. Generate 50 random numbers from [0,1) using np.random.rand function and calculate the mean, median, and variance.
+</div>
 
-#### Answer 4:
+<div class="cell markdown" markdown="1">
 
+------------------------------------------------------------------------
 
-```python
+</div>
+
+<div class="cell markdown" markdown="1">
+
+#### Q4. Generate 50 random numbers from \[0,1) using np.random.rand function and calculate the mean, median, and variance. {#q4-generate-50-random-numbers-from-01-using-nprandomrand-function-and-calculate-the-mean-median-and-variance}
+
+</div>
+
+<div class="cell markdown" markdown="1">
+
+#### Answer 4: {#answer-4}
+
+</div>
+
+<div class="cell code" markdown="1" execution_count="11">
+
+~~~ python
 # Generating & Printing Uniform [0,1) random array
 
 array_size = 50
@@ -240,19 +332,25 @@ np.random.seed(91) # Setting Seed as 91
 arr_uniform_rand = np.random.rand(array_size)
 print(arr_uniform_rand)
 print('\nArray Dimensions: {}'.format(arr_uniform_rand.shape))
-```
+~~~
+
+<div class="output stream stdout" markdown="1">
 
     [0.201  0.329  0.2965 0.0933 0.3331 0.7252 0.6524 0.5049 0.9473 0.6274
      0.9923 0.0761 0.3426 0.3069 0.7102 0.9173 0.0809 0.0628 0.5822 0.6692
      0.0093 0.4219 0.3954 0.0732 0.7703 0.1894 0.468  0.6517 0.0082 0.068
      0.7469 0.1575 0.5348 0.6763 0.5196 0.5194 0.4658 0.2446 0.9115 0.1077
      0.4818 0.7487 0.385  0.7519 0.7596 0.2879 0.6734 0.1756 0.672  0.2965]
-    
+
     Array Dimensions: (50,)
-    
 
+</div>
 
-```python
+</div>
+
+<div class="cell code" markdown="1" execution_count="12">
+
+~~~ python
 # Calculating & Printing Mean, Median & Variance
 
 arr_uniform_rand_mean = np.mean(a = arr_uniform_rand, axis = None)
@@ -262,21 +360,39 @@ arr_uniform_rand_var = np.var(a = arr_uniform_rand, ddof = 0, axis = None)
 print('Mean of the Array: {:.4f}'.format(arr_uniform_rand_mean))
 print('Median of the Array: {:.4f}'.format(arr_uniform_rand_median))
 print('Variance of the Array: {:.4f}'.format(arr_uniform_rand_var))
-```
+~~~
+
+<div class="output stream stdout" markdown="1">
 
     Mean of the Array: 0.4525
     Median of the Array: 0.4669
     Variance of the Array: 0.0751
-    
 
----
+</div>
 
-#### Q5.  Now reshape the above array into a 10x5 matrix (10 rows and 5 columns). calculate the same statistics for each column.
+</div>
 
-#### Answer 5:
+<div class="cell markdown" markdown="1">
 
+------------------------------------------------------------------------
 
-```python
+</div>
+
+<div class="cell markdown" markdown="1">
+
+#### Q5. Now reshape the above array into a 10x5 matrix (10 rows and 5 columns). calculate the same statistics for each column. {#q5-now-reshape-the-above-array-into-a-10x5-matrix-10-rows-and-5-columns-calculate-the-same-statistics-for-each-column}
+
+</div>
+
+<div class="cell markdown" markdown="1">
+
+#### Answer 5: {#answer-5}
+
+</div>
+
+<div class="cell code" markdown="1" execution_count="13">
+
+~~~ python
 # Reshaping the Array to (10,5)
 
 newshape = (10,5)
@@ -284,10 +400,12 @@ newshape = (10,5)
 arr_uniform_rand_reshaped = np.reshape(a = arr_uniform_rand, newshape = newshape, order = 'C')
 print('Reshaped Array: \n\n {}'.format(arr_uniform_rand_reshaped))
 print('\n Array Dimensions: {}'.format(arr_uniform_rand_reshaped.shape)) 
-```
+~~~
+
+<div class="output stream stdout" markdown="1">
 
     Reshaped Array: 
-    
+
      [[0.201  0.329  0.2965 0.0933 0.3331]
      [0.7252 0.6524 0.5049 0.9473 0.6274]
      [0.9923 0.0761 0.3426 0.3069 0.7102]
@@ -298,12 +416,16 @@ print('\n Array Dimensions: {}'.format(arr_uniform_rand_reshaped.shape))
      [0.5194 0.4658 0.2446 0.9115 0.1077]
      [0.4818 0.7487 0.385  0.7519 0.7596]
      [0.2879 0.6734 0.1756 0.672  0.2965]]
-    
+
      Array Dimensions: (10, 5)
-    
 
+</div>
 
-```python
+</div>
+
+<div class="cell code" markdown="1" execution_count="14">
+
+~~~ python
 # Calculating & Printing Mean, Median & Variance Column Wise
 
 arr_uniform_rand_reshaped_mean = np.mean(a = arr_uniform_rand_reshaped, axis = 0)
@@ -313,31 +435,52 @@ arr_uniform_rand_reshaped_var = np.var(a = arr_uniform_rand_reshaped, ddof = 0, 
 print('Means of the Array Column Wise: {}'.format(arr_uniform_rand_reshaped_mean))
 print('Medians of the Array Column Wise: {}'.format(arr_uniform_rand_reshaped_median))
 print('Variances of the Array Column Wise: {}'.format(arr_uniform_rand_reshaped_var))
-```
+~~~
+
+<div class="output stream stdout" markdown="1">
 
     Means of the Array Column Wise: [0.5071 0.4074 0.3594 0.5023 0.4862]
     Medians of the Array Column Wise: [0.5006 0.4438 0.3638 0.6271 0.5735]
     Variances of the Array Column Wise: [0.1    0.054  0.0278 0.1127 0.0638]
-    
 
----
+</div>
 
-#### Q6. Generate 50 random numbers from [0,1). Split this array into two equal arrays of size 25 each. Now reshape the two new arrays into 5x5 matrices and multiply both of them. Calculate the determinant of the new matrix (check wiki if you don't know what it means). Hint - you will find the determinant function part of the numpy linalg function (the linear algebra library)
+</div>
 
-#### Answer 6:
+<div class="cell markdown" markdown="1">
 
+------------------------------------------------------------------------
 
-```python
+</div>
+
+<div class="cell markdown" markdown="1">
+
+#### Q6. Generate 50 random numbers from \[0,1). Split this array into two equal arrays of size 25 each. Now reshape the two new arrays into 5x5 matrices and multiply both of them. Calculate the determinant of the new matrix (check wiki if you don't know what it means). Hint - you will find the determinant function part of the numpy linalg function (the linear algebra library) {#q6-generate-50-random-numbers-from-01-split-this-array-into-two-equal-arrays-of-size-25-each-now-reshape-the-two-new-arrays-into-5x5-matrices-and-multiply-both-of-them-calculate-the-determinant-of-the-new-matrix-check-wiki-if-you-dont-know-what-it-means-hint---you-will-find-the-determinant-function-part-of-the-numpy-linalg-function-the-linear-algebra-library}
+
+</div>
+
+<div class="cell markdown" markdown="1">
+
+#### Answer 6: {#answer-6}
+
+</div>
+
+<div class="cell code" markdown="1" execution_count="15">
+
+~~~ python
 # Generating a Uniform random Array
 
 array_size = 50 # Enter a even number
 np.random.seed(91) # Setting Seed as 91
 
 arr_rand = np.random.rand(array_size)
-```
+~~~
 
+</div>
 
-```python
+<div class="cell code" markdown="1" execution_count="16">
+
+~~~ python
 # Splitting & rehaping the Array into two parts
 
 split_size = int(array_size/2)
@@ -348,55 +491,76 @@ arr_rand_part2 = arr_rand[split_size:].reshape(newshape)
 
 print('Array 1: \n\n {}'.format(arr_rand_part1))
 print('\n\n Array 2: \n\n {}'.format(arr_rand_part2))
-```
+~~~
+
+<div class="output stream stdout" markdown="1">
 
     Array 1: 
-    
+
      [[0.201  0.329  0.2965 0.0933 0.3331]
      [0.7252 0.6524 0.5049 0.9473 0.6274]
      [0.9923 0.0761 0.3426 0.3069 0.7102]
      [0.9173 0.0809 0.0628 0.5822 0.6692]
      [0.0093 0.4219 0.3954 0.0732 0.7703]]
-    
-    
+
+
      Array 2: 
-    
+
      [[0.1894 0.468  0.6517 0.0082 0.068 ]
      [0.7469 0.1575 0.5348 0.6763 0.5196]
      [0.5194 0.4658 0.2446 0.9115 0.1077]
      [0.4818 0.7487 0.385  0.7519 0.7596]
      [0.2879 0.6734 0.1756 0.672  0.2965]]
-    
 
+</div>
 
-```python
+</div>
+
+<div class="cell code" markdown="1" execution_count="17">
+
+~~~ python
 # Matrix Multiplication of the two Arrays & Printing the Results
 
 arr_multiplied = arr_rand_part1 @ arr_rand_part2
 print('The multiplied array is: \n\n {}'.format(arr_multiplied))
-```
+~~~
+
+<div class="output stream stdout" markdown="1">
 
     The multiplied array is: 
-    
+
      [[0.5787 0.5782 0.4739 0.7884 0.3862]
      [1.5238 1.8091 1.4199 2.0412 1.3483]
      [0.7751 1.344  1.0141 1.0799 0.5876]
      [0.7399 1.3579 0.9981 1.0069 0.7518]
      [0.7793 0.8285 0.4919 1.2185 0.5464]]
-    
 
+</div>
 
-```python
+</div>
+
+<div class="cell code" markdown="1" execution_count="18">
+
+~~~ python
 # Calculating the Determinant of the multiplied Array & Printing it
 
 arr_multiplied_det = np.linalg.det(arr_multiplied)
 
 print('The determinant of the multiplied array is: {:.8f}'.format(arr_multiplied_det))
-```
+~~~
+
+<div class="output stream stdout" markdown="1">
 
     The determinant of the multiplied array is: 0.00009735
-    
 
----
----
----
+</div>
+
+</div>
+
+<div class="cell markdown" markdown="1">
+
+## --- {#---}
+
+------------------------------------------------------------------------
+
+</div>
