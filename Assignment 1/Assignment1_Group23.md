@@ -1,6 +1,7 @@
 <div class="cell markdown" markdown="1">
 
 <h2><center> Assignment - Module 1 </center></h2>
+<h3><center> 25 July 2021 </center></h3>
 <h3><center>Group 23: Aman Jindal | Yuhang Jiang | Daniel Gabriel Tan | Qining Liu </center></h3>
 
 <br><br>
