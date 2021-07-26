@@ -146,7 +146,7 @@ companies_info_final = {ticker :
 # Printing the Result
 
 print('\033[1m\t\t\033[4mDictionary of Companies\033[0m\033[0m\n\n')
-pprint(companies_info_final, sort_dicts=False)
+pprint(companies_info_final, sort_dicts = False)
 ~~~
 
 <div class="output stream stdout" markdown="1">
@@ -210,7 +210,7 @@ pprint(companies_info_final, sort_dicts=False)
 # Importing Required Libraries
 
 import numpy as np
-np.set_printoptions(precision=4) # To Print Values till 4 decimal places
+np.set_printoptions(precision = 4) # To Print Values till 4 decimal places
 ~~~
 
 </div>
