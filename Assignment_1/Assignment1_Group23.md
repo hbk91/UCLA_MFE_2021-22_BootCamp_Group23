@@ -156,29 +156,29 @@ pprint(companies_info_final, sort_dicts = False)
 
     {'MSFT': {'Name': 'Microsoft Corporation',
               'Company_Sector': 'Technology',
-              'Price (USD)': 288.99,
-              'Market_Cap(USD_Million)': 2176548.339712,
-              'PE_Ratio': 39.382664},
+              'Price (USD)': 289.13,
+              'Market_Cap(USD_Million)': 2177602.945024,
+              'PE_Ratio': 39.401745},
      'HD': {'Name': 'The Home Depot, Inc.',
             'Company_Sector': 'Consumer Cyclical',
-            'Price (USD)': 329.96,
-            'Market_Cap(USD_Million)': 350833.278976,
-            'PE_Ratio': 24.053068},
+            'Price (USD)': 329.875,
+            'Market_Cap(USD_Million)': 350742.904832,
+            'PE_Ratio': 24.046871},
      'LOW': {'Name': "Lowe's Companies, Inc.",
              'Company_Sector': 'Consumer Cyclical',
-             'Price (USD)': 197.16,
-             'Market_Cap(USD_Million)': 139370.430464,
-             'PE_Ratio': 21.505236},
+             'Price (USD)': 197.15,
+             'Market_Cap(USD_Million)': 139363.352576,
+             'PE_Ratio': 21.504143},
      'ADBE': {'Name': 'Adobe Inc.',
               'Company_Sector': 'Technology',
-              'Price (USD)': 623.64,
-              'Market_Cap(USD_Million)': 297102.114816,
-              'PE_Ratio': 54.04628},
+              'Price (USD)': 623.28,
+              'Market_Cap(USD_Million)': 296930.607104,
+              'PE_Ratio': 54.015083},
      'DUK': {'Name': 'Duke Energy Corporation',
              'Company_Sector': 'Utilities',
-             'Price (USD)': 104.5358,
-             'Market_Cap(USD_Million)': 80410.918912,
-             'PE_Ratio': 59.193542}}
+             'Price (USD)': 104.63,
+             'Market_Cap(USD_Million)': 80483.385344,
+             'PE_Ratio': 59.246883}}
 
 </div>
 
@@ -294,7 +294,7 @@ print('Arange Array: \n\n {}'.format(repr(array_arange)))
 ~~~ python
 # Validating if the Linspace & Arange Arrays are Equal
 
-print('Check if the Arrays are Equal: \n\n {}'.format(repr((array_linspace == array_arange).all())))
+print('Check if the Arrays are Equal: \n\n {}'.format((array_linspace == array_arange).all()))
 ~~~
 
 <div class="output stream stdout" markdown="1">
