@@ -1,6 +1,5 @@
-theme                    : jekyll-theme-cayman
-title                    : UCLA Anderson MFE (2021-22) BootCamp
-title_separator          : "-"
-subtitle                 : Group 23
-description              : Aman Jindal | Yuhang Jiang | Daniel Gabriel Tan | Qining Liu
+theme: jekyll-theme-cayman
+title: UCLA Anderson MFE (2021-22) BootCamp
+description: Group23: Aman Jindal | Yuhang Jiang | Daniel Gabriel Tan | Qining Liu
+masthead_title: Aman Jindal: hbk91.github.io           
 
