@@ -1,10 +1,10 @@
 <div class="cell markdown" markdown="1">
 
-<h2><center> Assignment - Module 1 </center></h2>
-<h3><center> 25 July 2021 </center></h3>
-<h3><center>Group 23: Aman Jindal | Yuhang Jiang | Daniel Gabriel Tan | Qining Liu </center></h3>
+<h2><p align=center> Assignment - Module 1 </p></h2>
+<h3><p align=center> 25 July 2021 </p></h3>
+<h3><p align=center> Group 23: Aman Jindal | Yuhang Jiang | Daniel Gabriel Tan | Qining Liu </p></h3>
 
-<br><br>
+<br /><br />
 
 </div>
 
@@ -632,7 +632,7 @@ print('Determinant of the multiplied array: {:.8f}'.format(arr_multiplied_det))
 
 <div class="cell markdown" markdown="1">
 
-<h2><center>The End.</center></h2>
+<h2><p align=center>The End.</p></h2>
 
 </div>
 
