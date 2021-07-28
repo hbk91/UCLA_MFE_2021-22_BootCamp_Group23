@@ -1,4 +1,4 @@
-### A. Submissions
+### 1. Submissions
 
 <ol type="1">
 <li>
