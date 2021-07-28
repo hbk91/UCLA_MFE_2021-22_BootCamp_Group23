@@ -11,6 +11,8 @@
 <div class="cell code" markdown="1" execution_count="1">
 
 ~~~ python
+# Importing Libraries
+
 import pandas as pd
 import numpy as np
 import datetime as dt
@@ -19,6 +21,14 @@ import re
 from pprint import pprint
 from functools import reduce
 ~~~
+
+</div>
+
+<div class="cell markdown" markdown="1">
+
+<hr markdown="1" style="border:.05px solid black">
+
+<br>
 
 </div>
 
