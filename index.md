@@ -1,7 +1,6 @@
 ## UCLA Anderson MFE (2021-22) BootCamp
 <br>
-
-### 1. Submissions
+### A. Submissions
 
 <ol type="1">
 <li>
