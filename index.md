@@ -1,4 +1,3 @@
-## UCLA Anderson MFE (2021-22) BootCamp Group 23
 ### A. Submissions
 
 <ol type="1">
@@ -11,3 +10,4 @@ Assignment 1 </a>
 Assignment 2 </a>
 </li>  
 </ol>
+
