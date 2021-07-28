@@ -178,15 +178,8 @@ input_file_path = os.path.join(cwd, input_file_folder, input_file_name)
 # Reading the Data
 
 df = pd.read_csv(filepath_or_buffer=input_file_path, sep=',',header=0)
-print('DataFrame Datatypes before processing:\n')
 df.dtypes
 ~~~
-
-<div class="output stream stdout" markdown="1">
-
-    DataFrame Datatypes before processing:
-
-</div>
 
 <div class="output execute_result" markdown="1" execution_count="7">
 
@@ -210,15 +203,8 @@ df.dtypes
 df['total_returns'] = pd.to_numeric(df['total_returns'], errors='coerce')
 df['price'] = pd.to_numeric(df['price'], errors='coerce')
 df['date'] = pd.to_datetime(df['date'], errors='coerce')
-print('DataFrame Datatypes before processing:\n')
 df.dtypes
 ~~~
-
-<div class="output stream stdout" markdown="1">
-
-    DataFrame Datatypes before processing:
-
-</div>
 
 <div class="output execute_result" markdown="1" execution_count="8">
 
@@ -646,7 +632,24 @@ print('\nDataFrame Shape: {}'.format(df_yearly.shape))
 
 <div class="cell markdown" markdown="1">
 
-<br><br><hr style="border:1px solid black"> <h2><p align=center>The
-End.</p></h2> <hr style="border:1px solid black">
+<br><br>
+
+</div>
+
+<div class="cell markdown" markdown="1">
+
+<hr markdown="1" style="border:1px solid black">
+
+</div>
+
+<div class="cell markdown" markdown="1">
+
+<h2><p align=center>The End.</p></h2>
+
+</div>
+
+<div class="cell markdown" markdown="1">
+
+<hr markdown="1" style="border:1px solid black">
 
 </div>
