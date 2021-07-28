@@ -176,7 +176,6 @@ input_file_path = os.path.join(cwd, input_file_folder, input_file_name)
 
 ~~~ python
 # Reading the Data
-
 df = pd.read_csv(filepath_or_buffer=input_file_path, sep=',',header=0)
 df.dtypes
 ~~~
