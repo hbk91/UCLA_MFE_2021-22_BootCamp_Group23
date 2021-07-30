@@ -786,16 +786,17 @@ if not os.path.exists(images_folder_path):
 
 image_name = 'image1.png'       # Name of the Image File
 image_path = os.path.join(images_folder_path, image_name)
+permnos_list = [10137, 10051, 10057, 10028]
 
-fig, ((ax1,ax2),(ax3,ax4)) = plt.subplots(2,2,sharex=False, sharey=False, 
-                                          squeeze=True, figsize=(10,6))
+dfs_to_plot = {permno: df.loc[df['permno'] == permno, 
+                       ['date','total_returns']].set_index('date').cumsum()
+                for permno in permnos_list}
 
-axs_permno = {ax1: 10137,ax2: 10051,ax3: 10057,ax4: 10028} 
-dfs_to_plot = {}
-for ax, permno in axs_permno.items(): 
-    dfs_to_plot[permno] = df.loc[df['permno'] == permno, 
-                                 ['date','total_returns']].set_index('date').cumsum()
-    
+fig, axes_arr = plt.subplots(2,2,sharex=False, sharey=False, 
+                             squeeze=True, figsize=(10,6))
+permno_axs = {permno: ax for permno, ax in zip(permnos_list, list(axes_arr.flatten()))} 
+
+for permno, ax in permno_axs.items(): 
     ax.plot(dfs_to_plot[permno], label='permno: {}'.format(permno))
     ax.tick_params(labelsize=10)
     ax.legend(fontsize=12,frameon=True)
@@ -807,6 +808,13 @@ fig.tight_layout()
 fig.subplots_adjust(left=0.14, top=0.92, bottom=0.14)
 plt.savefig(image_path, dpi=300)
 plt.close();
+~~~
+
+</div>
+
+<div class="cell code" markdown="1" execution_count="23">
+
+~~~ python
 ~~~
 
 </div>
