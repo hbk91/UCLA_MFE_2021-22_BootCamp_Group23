@@ -40,7 +40,7 @@ plt.style.use('seaborn')
 
 <div class="cell markdown" markdown="1">
 
-#### Answer 1 {#answer-1}
+#### Answer 1: {#answer-1}
 
 </div>
 
@@ -56,17 +56,17 @@ while i<len(input_list):
     ans_q1_whileLoop.append(0.5*input_list[i]*(input_list[i]+1))
     i = i+1
 
-print('The Answer:\n\n {}'.format(ans_q1_whileLoop))
-print('\nThe Length of the list is: {}'.format(len(ans_q1_whileLoop)))
+print('Answer:\n\n {}'.format(ans_q1_whileLoop))
+print('\nLength of the list: {}'.format(len(ans_q1_whileLoop)))
 ~~~
 
 <div class="output stream stdout" markdown="1">
 
-    The Answer:
+    Answer:
 
      [0.0, 1.0, 3.0, 6.0, 10.0, 15.0, 21.0, 28.0, 36.0, 45.0, 55.0, 66.0, 78.0, 91.0, 105.0, 120.0, 136.0, 153.0, 171.0, 190.0]
 
-    The Length of the list is: 20
+    Length of the list: 20
 
 </div>
 
@@ -80,17 +80,17 @@ print('\nThe Length of the list is: {}'.format(len(ans_q1_whileLoop)))
 input_list = range(20)
 ans_q1_lc = [0.5*n*(n+1) for n in input_list]
 
-print('The Answer:\n\n {}'.format(ans_q1_lc))
-print('\nThe Length of the list is: {}'.format(len(ans_q1_lc)))
+print('Answer:\n\n {}'.format(ans_q1_lc))
+print('\nLength of the list: {}'.format(len(ans_q1_lc)))
 ~~~
 
 <div class="output stream stdout" markdown="1">
 
-    The Answer:
+    Answer:
 
      [0.0, 1.0, 3.0, 6.0, 10.0, 15.0, 21.0, 28.0, 36.0, 45.0, 55.0, 66.0, 78.0, 91.0, 105.0, 120.0, 136.0, 153.0, 171.0, 190.0]
 
-    The Length of the list is: 20
+    Length of the list: 20
 
 </div>
 
@@ -126,6 +126,12 @@ print('Check if the lists are equal: {}'.format(ans_q1_whileLoop == ans_q1_lc))
 
 </div>
 
+<div class="cell markdown" markdown="1">
+
+#### Answer 2: {#answer-2}
+
+</div>
+
 <div class="cell code" markdown="1" execution_count="5">
 
 ~~~ python
@@ -146,13 +152,13 @@ max_pow = 3
 
 cubic_func = lambda x: sum_geom_pow(x, max_pow)
 ans_q2_lambda = cubic_func(input_arr)
-print('The Answer is:\n')
+print('Answer:\n')
 pprint(ans_q2_lambda)
 ~~~
 
 <div class="output stream stdout" markdown="1">
 
-    The Answer is:
+    Answer:
 
     array([     4,     15,     40,     85,    156,    259,    400,    585,
               820,   1111,   1464,   1885,   2380,   2955,   3616,   4369,
@@ -175,13 +181,13 @@ input_arr = np.arange(50)+1
 max_pow = 3
 
 ans_q2_lc = np.array([sum_geom_pow(x, max_pow) for x in input_arr])
-print('The Answer is:\n')
+print('Answer:\n')
 pprint(ans_q2_lc)
 ~~~
 
 <div class="output stream stdout" markdown="1">
 
-    The Answer is:
+    Answer:
 
     array([     4,     15,     40,     85,    156,    259,    400,    585,
               820,   1111,   1464,   1885,   2380,   2955,   3616,   4369,
@@ -198,7 +204,7 @@ pprint(ans_q2_lc)
 <div class="cell code" markdown="1" execution_count="8">
 
 ~~~ python
-# Check if the two outputs are same
+# Check if the two outputs are equal
 
 print('Check if the arrays are equal: {}'.format((ans_q2_lambda == ans_q2_lc).all()))
 ~~~
@@ -227,7 +233,7 @@ print('Check if the arrays are equal: {}'.format((ans_q2_lambda == ans_q2_lc).al
 
 <div class="cell markdown" markdown="1">
 
-#### Answer 3 {#answer-3}
+#### Answer 3: {#answer-3}
 
 </div>
 
@@ -248,12 +254,12 @@ for i, x in enumerate(input_list):
     else:
         ans_q3_forLoop.append(sum_geom_pow(x, max_pow_start45))
 
-print('The Answer: \n\n{}'.format(ans_q3_forLoop))
+print('Answer: \n\n{}'.format(ans_q3_forLoop))
 ~~~
 
 <div class="output stream stdout" markdown="1">
 
-    The Answer: 
+    Answer: 
 
     [1, 4, 15, 40, 85, 156, 259, 400, 585, 820, 1111, 1464, 1885, 2380, 2955, 3616, 4369, 5220, 6175, 7240, 8421, 9724, 11155, 12720, 14425, 16276, 18279, 20440, 22765, 25260, 27931, 30784, 33825, 37060, 40495, 44136, 47989, 52060, 56355, 60880, 65641, 70644, 75895, 81400, 87165, 4193821, 4576955, 4985761, 5421361, 5884901]
 
@@ -276,12 +282,12 @@ ans_q3_lc = [sum_geom_pow(x, max_pow_last5)
              else sum_geom_pow(x, max_pow_start45)  
              for i, x in enumerate(input_list)]
 
-print('The Answer: \n\n{}'.format(ans_q3_lc))
+print('Answer: \n\n{}'.format(ans_q3_lc))
 ~~~
 
 <div class="output stream stdout" markdown="1">
 
-    The Answer: 
+    Answer: 
 
     [1, 4, 15, 40, 85, 156, 259, 400, 585, 820, 1111, 1464, 1885, 2380, 2955, 3616, 4369, 5220, 6175, 7240, 8421, 9724, 11155, 12720, 14425, 16276, 18279, 20440, 22765, 25260, 27931, 30784, 33825, 37060, 40495, 44136, 47989, 52060, 56355, 60880, 65641, 70644, 75895, 81400, 87165, 4193821, 4576955, 4985761, 5421361, 5884901]
 
@@ -292,12 +298,14 @@ print('The Answer: \n\n{}'.format(ans_q3_lc))
 <div class="cell code" markdown="1" execution_count="11">
 
 ~~~ python
-print(ans_q3_forLoop == ans_q3_lc)
+# Check if the two outputs are equal
+
+print('Check if the arrays are equal: {}'.format((ans_q3_forLoop == ans_q3_lc)))
 ~~~
 
 <div class="output stream stdout" markdown="1">
 
-    True
+    Check if the arrays are equal: True
 
 </div>
 
@@ -315,18 +323,14 @@ print(ans_q3_forLoop == ans_q3_lc)
 
 #### Q4. List comprehension with logical statements: First generate a list using the range(30) function. Next, create a second list that creates elements based on the logic below. Hint: You can do this by including an if statement inside your list comprehension. {#q4-list-comprehension-with-logical-statements-first-generate-a-list-using-the-range30-function-next-create-a-second-list-that-creates-elements-based-on-the-logic-below-hint-you-can-do-this-by-including-an-if-statement-inside-your-list-comprehension}
 
-$$
-f(x)=\\begin{cases}
-x^2;\\quad \\text{if x is even}\\\\
-x^3;\\quad \\text{if x is odd}
-\\end{cases}
-$$
+*f*(*x*) = *x*<sup>2</sup>, if x is even;<br>
+*f*(*x*) = *x*<sup>3</sup>, if x is odd.
 
 </div>
 
 <div class="cell markdown" markdown="1">
 
-### Answer 4: {#answer-4}
+#### Answer 4: {#answer-4}
 
 </div>
 
@@ -337,12 +341,12 @@ input_list = range(30)
 
 ans_q4 = [x**2 if x % 2 == 0 else x**3 for x in input_list]
 
-print('The Answer: \n\n{}'.format(ans_q4))
+print('Answer: \n\n{}'.format(ans_q4))
 ~~~
 
 <div class="output stream stdout" markdown="1">
 
-    The Answer: 
+    Answer: 
 
     [0, 1, 4, 27, 16, 125, 36, 343, 64, 729, 100, 1331, 144, 2197, 196, 3375, 256, 4913, 324, 6859, 400, 9261, 484, 12167, 576, 15625, 676, 19683, 784, 24389]
 
@@ -366,7 +370,7 @@ print('The Answer: \n\n{}'.format(ans_q4))
 
 <div class="cell markdown" markdown="1">
 
-#### Answer 5 {#answer-5}
+#### Answer 5: {#answer-5}
 
 </div>
 
@@ -446,7 +450,9 @@ pos_list = [6, 30, 50, 100]
 
 @lru_cache(maxsize=1000)
 def get_fib_nth_elem_m3(n):
-    """Function takes input integer 'n' and returns the n-th sequence of the fibonacci series (no loops & no memoization)"""
+    """Function takes input integer 'n' and returns the n-th sequence of the fibonacci series 
+       (no loops & no memoization)"""
+    
     if n <= 2 : return 1
     else : return get_fib_nth_elem_m3(n-1) + get_fib_nth_elem_m3(n-2)
 
@@ -478,13 +484,11 @@ for pos in pos_list:
 
 <div class="cell markdown" markdown="1">
 
-#### Q6. Net Present Value: Code up a function that computes the net present value of a stream of cash-flows and call this function NPV. The function will take three inputs - cash-flows, dates, and interest rate (constant). We will use the formula specified below to compute the NPV of a stream of cash-flows on specific dates. The time periods *t*<sub>1</sub>, *t*<sub>2</sub>, .., *t*<sub>*N*</sub> are computed as differences from first date. Make sure you annualize the difference in days (convert them to years). Check out this wikipedia link if you want to read up some more (<https://en.wikipedia.org/wiki/Net_present_value>). {#q6-net-present-value-code-up-a-function-that-computes-the-net-present-value-of-a-stream-of-cash-flows-and-call-this-function-npv-the-function-will-take-three-inputs---cash-flows-dates-and-interest-rate-constant-we-will-use-the-formula-specified-below-to-compute-the-npv-of-a-stream-of-cash-flows-on-specific-dates-the-time-periods-t_1t_2t_n-are-computed-as-differences-from-first-date-make-sure-you-annualize-the-difference-in-days-convert-them-to-years-check-out-this-wikipedia-link-if-you-want-to-read-up-some-more-httpsenwikipediaorgwikinet_present_value}
-
-$$NPV(CF) = CF_0 + \\frac{CF_1}{(1+r)^{t_1}} + \\frac{CF_2}{(1+r)^{t_2}} + ... \\frac{CF_N}{(1+r)^{t_N}}$$
+#### Q6. Net Present Value: Code up a function that computes the net present value of a stream of cash-flows and call this function NPV. The function will take three inputs - cash-flows, dates, and interest rate (constant). We will use the formula specified below to compute the NPV of a stream of cash-flows on specific dates. The time periods *t*<sub>1</sub>, *t*<sub>2</sub>, .., *t*<sub>*N*</sub> are computed as differences from first date. Make sure you annualize the difference in days (convert them to years). Check out <a href="https://en.wikipedia.org/wiki/Net_present_value" target="_blank">this wikipedia</a> link if you want to read up some more. {#q6-net-present-value-code-up-a-function-that-computes-the-net-present-value-of-a-stream-of-cash-flows-and-call-this-function-npv-the-function-will-take-three-inputs---cash-flows-dates-and-interest-rate-constant-we-will-use-the-formula-specified-below-to-compute-the-npv-of-a-stream-of-cash-flows-on-specific-dates-the-time-periods-t_1t_2t_n-are-computed-as-differences-from-first-date-make-sure-you-annualize-the-difference-in-days-convert-them-to-years-check-out-this-wikipedia-link-if-you-want-to-read-up-some-more}
 
 **Run this function for the following input:**
 
-Compute : NPV(CF=\[-100,50,40,30\],date=\[01-Jan-2020,31-Mar-2021,30-Jun-2021,31-Dec-2024\],*r*=0.05)
+Compute : NPV(CF=\[-100,50,40,30\], date=\[01-Jan-2020,31-Mar-2021,30-Jun-2021,31-Dec-2024\], *r*=0.05)
 
 </div>
 
@@ -495,10 +499,11 @@ Compute : NPV(CF=\[-100,50,40,30\],date=\[01-Jan-2020,31-Mar-2021,30-Jun-2021,31
 #### Notes on Parsing Dates: {#notes-on-parsing-dates}
 
 -   Date Formats are available
-    [here](https://docs.python.org/2/library/datetime.html#strftime-and-strptime-behavior)
+    <a href="https://docs.python.org/2/library/datetime.html#strftime-and-strptime-behavior" target="_blank">here</a>
     for parsing string as dates
--   [dateparser library](https://dateparser.readthedocs.io/en/latest/).
-    It can even parse dates even without providing a date format
+-   <a href="https://dateparser.readthedocs.io/en/latest/" target="_blank">dateparser
+    library</a>. It can even parse dates even without providing a date
+    format
 -   More date formats can be supplied as additional list elements in
     `date_formats` argument of `dateparser.parse`
 
@@ -509,10 +514,11 @@ Compute : NPV(CF=\[-100,50,40,30\],date=\[01-Jan-2020,31-Mar-2021,30-Jun-2021,31
 ~~~ python
 def NPV(cash_flows, cf_dates, interest_rate):
     '''
-    Computes the NPV of a series of cash flows. First date in the `dates`list assumed to be the date of calculation of NPV
+    Computes the NPV of a series of cash flows. First date in the cf_dates list is assumed to 
+    be the NPV calculation date
 
     Args:
-    cash_flows (list of int/float): The list of cash flows
+    cash_flows (list of int/float): List of cash flows
     cf_dates (list of str): List of cash flow dates in the str format 'DD-MMM-YYYY' (e.g.: 01-Jan-2021)
     interest_rate (int/float): Yearly Interest Rate for discounting (absolute value)
 
@@ -521,13 +527,15 @@ def NPV(cash_flows, cf_dates, interest_rate):
     ''' 
 
     
-    date_formats = ['%d-%b-%Y']             # More date formats can be supplied as additional list element
+    date_formats = ['%d-%b-%Y']             # More date formats can be supplied as additional list elements
     days_a_year = 365                       # Actual/365 day-count convetion is chosen
 
-    cf_dates_parsed = [dateparser.parse(date_string=date_string, date_formats=date_formats).date()
+    cf_dates_parsed = [dateparser.parse(date_string=date_string, 
+                                        date_formats=date_formats).date()
                        for date_string in cf_dates]  
     
-    cf_time_deltas =  [(cf_date - cf_dates_parsed[0]).days/days_a_year for cf_date in cf_dates_parsed]
+    cf_time_deltas =  [(cf_date - cf_dates_parsed[0]).days/days_a_year 
+                       for cf_date in cf_dates_parsed]
 
     pv_cash_flows = [cash_flow/(1+interest_rate)**time_to_maturity 
                      for cash_flow, time_to_maturity in zip(cash_flows, cf_time_deltas)]
@@ -572,7 +580,7 @@ print('NPV of the cash flows: {:,.2f}'.format(NPV(cash_flows, cash_flow_dates, i
 
 <div class="cell markdown" markdown="1">
 
-#### Answer 7 {#answer-7}
+#### Answer 7: {#answer-7}
 
 </div>
 
@@ -581,7 +589,7 @@ print('NPV of the cash flows: {:,.2f}'.format(NPV(cash_flows, cash_flow_dates, i
 ~~~ python
 # Setting the Input File Path
 
-input_file_folder = 'Data'          # Folder Name within current directory where the file is stored
+input_file_folder = 'Data'          # Folder Name within the cwd where the data file is stored
 input_file_name = 'stock_data.csv'  # Name of the File
 cwd = os.getcwd() 
 input_file_path = os.path.join(cwd, input_file_folder, input_file_name)
@@ -592,9 +600,11 @@ input_file_path = os.path.join(cwd, input_file_folder, input_file_name)
 <div class="cell markdown" markdown="1">
 
 -   More details on dtpyes & converters used below while reading data is
-    available [here](https://pbpython.com/pandas_dtypes.html)
--   In the above link, specifying dtypes vs. specifying converters while
-    reading data is quite useful
+    available
+    <a href="https://pbpython.com/pandas_dtypes.html" target="_blank">
+-   In the above link, the comparison between specifying dtypes and
+    specifying converters while using the pandas read function is quite
+    useful
 
 </div>
 
@@ -685,19 +695,15 @@ print(df.tail())
 
 #### Q8. Combining Pandas apply and lambda functions: Load and clean the stock_data.csv file. Compute the market cap by multiplying the price and outstanding shares. You need to segregate PERMNOs into large-cap, mid-cap, and small-cap stocks. First, you have to write a function that takes in a value *x* (market cap) as an input. For segregating use the following criteria mentioned below. Use the pandas apply along with lambda function, to pass the function pass you have just coded up. {#q8-combining-pandas-apply-and-lambda-functions-load-and-clean-the-stock_datacsv-file-compute-the-market-cap-by-multiplying-the-price-and-outstanding-shares-you-need-to-segregate-permnos-into-large-cap-mid-cap-and-small-cap-stocks-first-you-have-to-write-a-function-that-takes-in-a-value-x-market-cap-as-an-input-for-segregating-use-the-following-criteria-mentioned-below-use-the-pandas-apply-along-with-lambda-function-to-pass-the-function-pass-you-have-just-coded-up}
 
-$$
-f(x)=\\begin{cases}
-\\text{small cap}    ,\\quad  \\text{if x} &lt; 100000\\\\
-\\text{mid cap}      ,\\quad  100000 \\le \\text{if x} &lt; 1000000\\\\
-\\text{large cap}    ,\\quad  \\text{if x} \\ge  1000000
-\\end{cases}
-$$
+*f*(*x*) = small cap,  if x &lt; 100000<br>
+*f*(*x*) = mid cap,  100000 ≤ if x &lt; 1000000<br>
+*f*(*x*) = large cap,  if x ≥ 1000000
 
 </div>
 
 <div class="cell markdown" markdown="1">
 
-#### Answer 8 {#answer-8}
+#### Answer 8: {#answer-8}
 
 </div>
 
@@ -706,7 +712,9 @@ $$
 ~~~ python
 # For each permno, average market cap has been used yo determine market cap size
 
-pd.options.display.float_format = '{:,.2f}'.format         # Setrting Display Options for Market Cap
+m_cap_types = ['small_cap', 'mid_cap', 'large_cap']
+
+pd.options.display.float_format = '{:,.2f}'.format       # Setting Display Options for Market Cap
 
 df['market_cap'] = df['price']*df['share_outstanding']
 mcap_determiner = lambda x: np.select(condlist=
@@ -714,39 +722,20 @@ mcap_determiner = lambda x: np.select(condlist=
                             choicelist=['small_cap', 'large_cap'],
                                       default='mid_cap') 
 
-ans_q8 = df.groupby('permno')['market_cap'].mean().reset_index()\
+df_updated = df.groupby('permno')['market_cap'].mean().reset_index()\
            .assign(m_cap_size = lambda x: mcap_determiner(x)) 
-print(ans_q8)
+
+m_cap_permno_dict = {m_cap_type: 
+                    df_updated.loc[df_updated['m_cap_size'] == m_cap_type, 'permno'].unique().tolist()
+                    for m_cap_type in m_cap_types}
+print('Answer:\n\n{}'.format(m_cap_permno_dict))
 ~~~
 
 <div class="output stream stdout" markdown="1">
 
-        permno     market_cap m_cap_size
-    0    10001      93,580.90  small_cap
-    1    10006     310,702.33    mid_cap
-    2    10014      14,424.92  small_cap
-    3    10028      22,384.82  small_cap
-    4    10029      16,272.76  small_cap
-    5    10042      39,216.34  small_cap
-    6    10048     212,748.54    mid_cap
-    7    10051     353,276.30    mid_cap
-    8    10057      77,620.70  small_cap
-    9    10064     306,181.12    mid_cap
-    10   10066      25,052.92  small_cap
-    11   10071     663,672.97    mid_cap
-    12   10085     863,383.78    mid_cap
-    13   10092     196,100.03    mid_cap
-    14   10097      15,511.71  small_cap
-    15   10102     318,587.27    mid_cap
-    16   10104 178,854,090.59  large_cap
-    17   10108   5,892,340.14  large_cap
-    18   10116      32,546.23  small_cap
-    19   10119   1,298,080.17  large_cap
-    20   10120     286,089.80    mid_cap
-    21   10123     219,657.30    mid_cap
-    22   10125      35,624.19  small_cap
-    23   10126   1,106,541.70  large_cap
-    24   10137   2,702,880.54  large_cap
+    Answer:
+
+    {'small_cap': [10001, 10014, 10028, 10029, 10042, 10057, 10066, 10097, 10116, 10125], 'mid_cap': [10006, 10048, 10051, 10064, 10071, 10085, 10092, 10102, 10120, 10123], 'large_cap': [10104, 10108, 10119, 10126, 10137]}
 
 </div>
 
@@ -760,14 +749,32 @@ print(ans_q8)
 
 <div class="cell markdown" markdown="1">
 
-#### Answer 9 {#answer-9}
+#### Answer 9: {#answer-9}
 
 </div>
 
 <div class="cell code" markdown="1" execution_count="22">
 
 ~~~ python
+# Creating a Folder within cwd where Images will be stored, if none exists
+
+images_folder = 'Images'   # Folder Name within the cwd where Images will stored  
+cwd = os.getcwd()
+images_folder_path = os.path.join(cwd, images_folder)
+
+if not os.path.exists(images_folder_path):
+    os.makedirs(images_folder_path)
+~~~
+
+</div>
+
+<div class="cell code" markdown="1" execution_count="23">
+
+~~~ python
 # Plotting a 4-by-4 subplot
+
+image_name = 'image1.png'       # Name of the Image File
+image_path = os.path.join(images_folder_path, image_name)
 
 fig, ((ax1,ax2),(ax3,ax4)) = plt.subplots(2,2,sharex=False, sharey=False, 
                                           squeeze=True, figsize=(10,6))
@@ -775,7 +782,9 @@ fig, ((ax1,ax2),(ax3,ax4)) = plt.subplots(2,2,sharex=False, sharey=False,
 axs_permno = {ax1: 10137,ax2: 10051,ax3: 10057,ax4: 10028} 
 dfs_to_plot = {}
 for ax, permno in axs_permno.items(): 
-    dfs_to_plot[permno] = df.loc[df['permno'] == permno, ['date','total_returns']].set_index('date').cumsum()
+    dfs_to_plot[permno] = df.loc[df['permno'] == permno, 
+                                 ['date','total_returns']].set_index('date').cumsum()
+    
     ax.plot(dfs_to_plot[permno], label='permno: {}'.format(permno))
     ax.tick_params(labelsize=10)
     ax.legend(fontsize=12,frameon=True)
@@ -785,7 +794,7 @@ fig.text(0.08, 0.5, 'Cumulative Returns (Absolute)', va='center', rotation='vert
 fig.suptitle("Cumulative Returns over Time for different permnos", ha='center', fontsize=16)
 fig.tight_layout()
 fig.subplots_adjust(left = 0.14,top=0.92, bottom = 0.14)
-plt.savefig('.//Images//Image_4Plots.jpeg');
+plt.savefig(image_path)
 plt.close();
 ~~~
 
@@ -793,15 +802,17 @@ plt.close();
 
 <div class="cell markdown" markdown="1">
 
-![](.//Images//Image_4Plots.jpeg)
+<img src='.//Images/image1.png'/>
 
 </div>
 
-<div class="cell code" markdown="1" execution_count="23">
+<div class="cell code" markdown="1" execution_count="24">
 
 ~~~ python
 # Plotting a cumulative single plot for all the 4 permnos
 
+image_name = 'image2.png'       # Name of the Image File
+image_path = os.path.join(images_folder_path, image_name)
 fig = plt.figure(figsize=(10, 6))
 for permno, df_to_plot in dfs_to_plot.items():
     plt.plot(df_to_plot, label='permno: {}'.format(permno))
@@ -811,15 +822,15 @@ ax.legend(fontsize=12,frameon=True, loc='upper left');
 plt.xlabel('Date', fontsize=12)
 plt.ylabel('Cumulative Returns (Absolute)', fontsize=12)
 plt.title("Cumulative Returns over Time for different permnos", fontsize=16)
-plt.savefig('.//Images//Image_Cumulative.jpeg')
-plt.close()
+plt.savefig(image_path)
+plt.close();
 ~~~
 
 </div>
 
 <div class="cell markdown" markdown="1">
 
-![](.//Images//Image_Cumulative.jpeg)
+<img src='.//Images/image2.png'/>
 
 </div>
 
