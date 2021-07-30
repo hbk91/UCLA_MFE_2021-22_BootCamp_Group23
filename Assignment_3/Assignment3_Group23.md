@@ -502,10 +502,11 @@ Compute : NPV(CF=\[-100,50,40,30\], date=\[01-Jan-2020,31-Mar-2021,30-Jun-2021
     <a href="https://docs.python.org/2/library/datetime.html#strftime-and-strptime-behavior" target="_blank">here</a>
     for parsing string as dates
 -   <a href="https://dateparser.readthedocs.io/en/latest/" target="_blank">dateparser
-    library</a> is a powerful library to parse dates. It can even parse
-    dates without the assistance of a date format.
--   Further, more than one date formats can also be supplied as a list
-    to the `date_formats` argument of `dateparser.parse` function.
+    library</a> is a powerful library for parsing dates from strings. It
+    can even parse dates without the assistance of a date format.
+-   Further, more than one date formats can also be supplied, as
+    elements of a list, to the `date_formats` argument of
+    `dateparser.parse` function.
 
 </div>
 
