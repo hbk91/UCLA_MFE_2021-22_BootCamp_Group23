@@ -519,7 +519,8 @@ def NPV(cash_flows, cf_dates, interest_rate):
 
     Args:
     cash_flows (list of int/float): List of cash flows
-    cf_dates (list of str): List of cash flow dates in the str format 'DD-MMM-YYYY' (e.g.: 01-Jan-2021)
+    cf_dates (list of str): List of cash flow dates in the str format 'DD-MMM-YYYY' 
+                            (e.g.: 01-Jan-2021)
     interest_rate (int/float): Yearly Interest Rate for discounting (absolute value)
 
     Returns:
@@ -527,8 +528,8 @@ def NPV(cash_flows, cf_dates, interest_rate):
     ''' 
 
     
-    date_formats = ['%d-%b-%Y']             # More date formats can be supplied as additional list elements
-    days_a_year = 365                       # Actual/365 day-count convetion is chosen
+    date_formats = ['%d-%b-%Y']        # More date formats can be supplied as additional list elements
+    days_a_year = 365                  # Actual/365 day-count convetion is chosen
 
     cf_dates_parsed = [dateparser.parse(date_string=date_string, 
                                         date_formats=date_formats).date()
@@ -644,7 +645,8 @@ df.shape
 def calc_roll_returns(df, months=12):
     
     # Offset is 1 month less as the addition of returns is inclusive of both start & end months
-    # Additional 10 days are added while comparing 11 month previous days to allow for misaligned months such as Feb
+    # Additional 10 days are added while comparing 11 month previous days to allow 
+    # for misaligned months such as Feb
 
     offset = months - 1
     df.reset_index(inplace=True, drop=True)
@@ -726,7 +728,8 @@ df_updated = df.groupby('permno')['market_cap'].mean().reset_index()\
            .assign(m_cap_size = lambda x: mcap_determiner(x)) 
 
 m_cap_permno_dict = {m_cap_type: 
-                    df_updated.loc[df_updated['m_cap_size'] == m_cap_type, 'permno'].unique().tolist()
+                    df_updated.loc[df_updated['m_cap_size'] == m_cap_type, 'permno']
+                              .unique().tolist()
                     for m_cap_type in m_cap_types}
 print('Answer:\n\n{}'.format(m_cap_permno_dict))
 ~~~
@@ -768,7 +771,7 @@ if not os.path.exists(images_folder_path):
 
 </div>
 
-<div class="cell code" markdown="1" execution_count="23">
+<div class="cell code" markdown="1" execution_count="37">
 
 ~~~ python
 # Plotting a 4-by-4 subplot
@@ -794,7 +797,7 @@ fig.text(0.08, 0.5, 'Cumulative Returns (Absolute)', va='center', rotation='vert
 fig.suptitle("Cumulative Returns over Time for different permnos", ha='center', fontsize=16)
 fig.tight_layout()
 fig.subplots_adjust(left = 0.14,top=0.92, bottom = 0.14)
-plt.savefig(image_path)
+plt.savefig(image_path, dpi=300)
 plt.close();
 ~~~
 
@@ -806,12 +809,12 @@ plt.close();
 
 </div>
 
-<div class="cell code" markdown="1" execution_count="24">
+<div class="cell code" markdown="1" execution_count="38">
 
 ~~~ python
 # Plotting a cumulative single plot for all the 4 permnos
 
-image_name = 'image2.png'       # Name of the Image File
+image_name = 'image2.jpeg'       # Name of the Image File
 image_path = os.path.join(images_folder_path, image_name)
 fig = plt.figure(figsize=(10, 6))
 for permno, df_to_plot in dfs_to_plot.items():
@@ -822,7 +825,7 @@ ax.legend(fontsize=12,frameon=True, loc='upper left');
 plt.xlabel('Date', fontsize=12)
 plt.ylabel('Cumulative Returns (Absolute)', fontsize=12)
 plt.title("Cumulative Returns over Time for different permnos", fontsize=16)
-plt.savefig(image_path)
+plt.savefig(image_path, dpi=300)
 plt.close();
 ~~~
 
@@ -830,7 +833,7 @@ plt.close();
 
 <div class="cell markdown" markdown="1">
 
-<img src='.//Images/image2.png'/>
+<img src='.//Images/image2.jpeg'/>
 
 </div>
 
