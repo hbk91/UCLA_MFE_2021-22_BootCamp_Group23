@@ -101,7 +101,7 @@ print('\nThe Length of the list is: {}'.format(len(ans_q1_lc)))
 ~~~ python
 # Check if the two lists are equal
 
-print('Check if the lists are equal:{}'.format(ans_q1_whileLoop == ans_q1_lc))
+print('Check if the lists are equal: {}'.format(ans_q1_whileLoop == ans_q1_lc))
 ~~~
 
 <div class="output stream stdout" markdown="1">
@@ -129,7 +129,7 @@ print('Check if the lists are equal:{}'.format(ans_q1_whileLoop == ans_q1_lc))
 <div class="cell code" markdown="1" execution_count="5">
 
 ~~~ python
-# A General Purpose Function for calculating a geometric power series sum for a = 1, r = pow 
+# A General Purpose Function for calculating sum of a geometric power series where a = 1 & r = pow 
 
 def sum_geom_pow(elem, pow): return sum([elem**p for p in range(pow+1)])
 ~~~
@@ -764,7 +764,7 @@ print(ans_q8)
 
 </div>
 
-<div class="cell code" markdown="1" execution_count="22">
+<div class="cell code" markdown="1" execution_count="24">
 
 ~~~ python
 # Plotting a 4-by-4 subplot
@@ -784,7 +784,8 @@ fig.text(0.5, 0.04, 'Date', ha='center', fontsize=12)
 fig.text(0.08, 0.5, 'Cumulative Returns (Absolute)', va='center', rotation='vertical', fontsize=12)
 fig.suptitle("Cumulative Returns over Time for different permnos", ha='center', fontsize=16)
 fig.tight_layout()
-fig.subplots_adjust(left = 0.14,top=0.92, bottom = 0.14);
+fig.subplots_adjust(left = 0.14,top=0.92, bottom = 0.14)
+plt.show();
 ~~~
 
 <div class="output display_data" markdown="1">
@@ -795,7 +796,7 @@ fig.subplots_adjust(left = 0.14,top=0.92, bottom = 0.14);
 
 </div>
 
-<div class="cell code" markdown="1" execution_count="23">
+<div class="cell code" markdown="1" execution_count="25">
 
 ~~~ python
 # Plotting a cumulative single plot for all the 4 permnos
@@ -808,7 +809,8 @@ ax = plt.gca()
 ax.legend(fontsize=12,frameon=True, loc='upper left');
 plt.xlabel('Date', fontsize=12)
 plt.ylabel('Cumulative Returns (Absolute)', fontsize=12)
-plt.title("Cumulative Returns over Time for different permnos", fontsize=16);
+plt.title("Cumulative Returns over Time for different permnos", fontsize=16)
+plt.show();
 ~~~
 
 <div class="output display_data" markdown="1">
