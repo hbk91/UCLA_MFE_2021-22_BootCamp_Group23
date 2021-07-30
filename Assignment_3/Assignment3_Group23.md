@@ -646,7 +646,7 @@ df.shape
 def calc_roll_returns(df, months=12):
     
     # Offset is 1 month less as the addition of returns is inclusive of both start & end months
-    # Additional 10 days are added while comparing 11 month previous days to allow 
+    # Additional 10 days are added while comparing 11 month previous date to allow 
     # for misaligned months such as Feb
 
     offset = months - 1
