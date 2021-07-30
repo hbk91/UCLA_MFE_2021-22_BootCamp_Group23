@@ -52,9 +52,9 @@ plt.style.use('seaborn')
 input_list = range(20)
 ans_q1_whileLoop = []
 i = 0
-while i<len(input_list):
+while i < len(input_list):
     ans_q1_whileLoop.append(0.5*input_list[i]*(input_list[i]+1))
-    i = i+1
+    i = i + 1
 
 print('Answer:\n\n {}'.format(ans_q1_whileLoop))
 print('\nLength of the list: {}'.format(len(ans_q1_whileLoop)))
@@ -726,7 +726,7 @@ mcap_determiner = lambda x: np.select(condlist=
                                       default='mid_cap') 
 
 df_updated = df.groupby('permno')['market_cap'].mean().reset_index()\
-           .assign(m_cap_size = lambda x: mcap_determiner(x)) 
+               .assign(m_cap_size = lambda x: mcap_determiner(x)) 
 
 m_cap_permno_dict = {m_cap_type: 
                     df_updated.loc[df_updated['m_cap_size'] == m_cap_type, 'permno']
