@@ -771,7 +771,7 @@ if not os.path.exists(images_folder_path):
 
 </div>
 
-<div class="cell code" markdown="1" execution_count="37">
+<div class="cell code" markdown="1" execution_count="23">
 
 ~~~ python
 # Plotting a 4-by-4 subplot
@@ -809,12 +809,12 @@ plt.close();
 
 </div>
 
-<div class="cell code" markdown="1" execution_count="38">
+<div class="cell code" markdown="1" execution_count="24">
 
 ~~~ python
 # Plotting a cumulative single plot for all the 4 permnos
 
-image_name = 'image2.jpeg'       # Name of the Image File
+image_name = 'image2.png'       # Name of the Image File
 image_path = os.path.join(images_folder_path, image_name)
 fig = plt.figure(figsize=(10, 6))
 for permno, df_to_plot in dfs_to_plot.items():
@@ -833,7 +833,7 @@ plt.close();
 
 <div class="cell markdown" markdown="1">
 
-<img src='.//Images/image2.jpeg'/>
+<img src='.//Images/image2.png'/>
 
 </div>
 
