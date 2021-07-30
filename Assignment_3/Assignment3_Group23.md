@@ -603,7 +603,7 @@ input_file_path = os.path.join(cwd, input_file_folder, input_file_name)
 
 -   More details on dtpyes & converters used below while reading data is
     available
-    <a href="https://pbpython.com/pandas_dtypes.html" target="_blank">
+    <a href="https://pbpython.com/pandas_dtypes.html" target="_blank">here</a>
 -   In the above link, the comparison between specifying dtypes and
     specifying converters while using the pandas read function is quite
     useful
@@ -768,7 +768,7 @@ print('Answer:\n\n{}'.format(m_cap_permno_dict))
 <div class="cell code" markdown="1" execution_count="22">
 
 ~~~ python
-# Creating a Folder within cwd where Images will be stored, if none exists
+# Creating a Folder, if none exists, within cwd to store the Images
 
 images_folder = 'Images'   # Folder Name within the cwd where Images will stored  
 cwd = os.getcwd()
