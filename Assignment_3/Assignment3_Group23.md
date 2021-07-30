@@ -528,8 +528,8 @@ def NPV(cash_flows, cf_dates, interest_rate):
     ''' 
 
     
-    date_formats = ['%d-%b-%Y']        # More date formats can be supplied as additional list elements
-    days_a_year = 365                  # Actual/365 day-count convetion is chosen
+    date_formats = ['%d-%b-%Y']    # More date formats can be supplied as additional list elements
+    days_a_year = 365              # Actual/365 day-count convetion is chosen
 
     cf_dates_parsed = [dateparser.parse(date_string=date_string, 
                                         date_formats=date_formats).date()
