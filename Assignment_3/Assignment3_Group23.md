@@ -804,7 +804,7 @@ fig.text(0.5, 0.04, 'Date', ha='center', fontsize=12)
 fig.text(0.08, 0.5, 'Cumulative Returns (Absolute)', va='center', rotation='vertical', fontsize=12)
 fig.suptitle("Cumulative Returns over Time for different permnos", ha='center', fontsize=16)
 fig.tight_layout()
-fig.subplots_adjust(left = 0.14,top=0.92, bottom = 0.14)
+fig.subplots_adjust(left=0.14, top=0.92, bottom=0.14)
 plt.savefig(image_path, dpi=300)
 plt.close();
 ~~~
@@ -829,7 +829,7 @@ for permno, df_to_plot in dfs_to_plot.items():
     plt.plot(df_to_plot, label='permno: {}'.format(permno))
 
 ax = plt.gca()
-ax.legend(fontsize=12,frameon=True, loc='upper left');
+ax.legend(fontsize=12, frameon=True, loc='upper left');
 plt.xlabel('Date', fontsize=12)
 plt.ylabel('Cumulative Returns (Absolute)', fontsize=12)
 plt.title("Cumulative Returns over Time for different permnos", fontsize=16)
