@@ -746,6 +746,14 @@ print('Answer:\n\n{}'.format(m_cap_permno_dict))
 
 <div class="cell markdown" markdown="1">
 
+<hr markdown="1" style="border:.05px solid black">
+
+<br>
+
+</div>
+
+<div class="cell markdown" markdown="1">
+
 #### Q9.Plot and Subplots: For the 4 PERMNOs - (10137, 10051, 10057, 10028), calculate the cumulative sum of returns and plot them in a 4-by-4 sub plot. Also, plot all their cumulative sum of returns in one plot. Hint: To compute the cumulative sum, you can use the .cumsum() function of pandas. You can also use the .plot() function of pandas dataframe instead of using matplotlib's plt function. {#q9plot-and-subplots-for-the-4-permnos---10137-10051-10057-10028-calculate-the-cumulative-sum-of-returns-and-plot-them-in-a-4-by-4-sub-plot-also-plot-all-their-cumulative-sum-of-returns-in-one-plot-hint-to-compute-the-cumulative-sum-you-can-use-the-cumsum-function-of-pandas-you-can-also-use-the-plot-function-of-pandas-dataframe-instead-of-using-matplotlibs-plt-function}
 
 </div>
