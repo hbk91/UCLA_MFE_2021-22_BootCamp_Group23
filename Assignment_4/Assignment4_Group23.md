@@ -17,9 +17,9 @@
 #### Answer 2:
 
 - Partitioning a Set: For every two sets $A$ and $B$, $B$ and $A \cap B^c$ are disjoint, Thus,
-  $$A \cup B = B \cup (A \cap B^c)$$    (1)
+  \\[A \cup B = B \cup (A \cap B^c)\]    (1)
 
-  
+$\frac{1}{2}$
     
 
 
