@@ -21,5 +21,8 @@
 #### Answer 2:
 
 -   Partitioning a Set: For every two sets *A* and *B*, *B* and
-    *A* ∩ *B*<sup>*c*</sup> are disjoint, Thus,
-    *A* ∪ *B* = *B* ∪ (*A*∩*B*<sup>*c*</sup>)
+    *A* ∩ *B*<sup>*c*</sup> are disjoint.
+
+<div align=center>aman $A\cup B = B \cup (A \cap B^c)$ jindal</div>
+
+<p style="text-align: center;">Centered $Aman$ text</p>
