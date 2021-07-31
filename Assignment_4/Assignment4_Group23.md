@@ -19,7 +19,7 @@
 - Partitioning a Set: For every two sets $A$ and $B$, $B$ and $A \cap B^c$ are disjoint, Thus,
   \\[A \cup B = B \cup (A \cap B^c)\]    (1)
 
-$\frac{1}{2}$
+<img src="https://render.githubusercontent.com/render/math?math=\frac{1}{2}">
     
 
 
