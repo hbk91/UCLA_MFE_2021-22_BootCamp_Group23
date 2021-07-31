@@ -23,6 +23,6 @@
 -   Partitioning a Set: For every two sets *A* and *B*, *B* and
     *A* ∩ *B*<sup>*c*</sup> are disjoint.
 
-<div align=center>aman $A\cup B = B \cup (A \cap B^c)$ jindal</div>
+<p align=center>aman $A\cup B = B \cup (A \cap B^c)$ jindal</p>
 
 <p style="text-align: center;">Centered $Aman$ text</p>
