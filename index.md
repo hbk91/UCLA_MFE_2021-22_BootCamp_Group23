@@ -1,5 +1,9 @@
-## UCLA Anderson MFE (2021-22) BootCamp
-### Assignment Submissions:
+---
+title: "UCLA Anderson MFE (2021-22) BootCamp"
+description: "Group 23: Aman Jindal | Yuhang Jiang | Daniel Gabriel Tan | Qining Liu"
+---
+
+### Programming Assignments:
 
 <ol type="1">
 <li>
