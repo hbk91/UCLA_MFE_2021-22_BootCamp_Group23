@@ -7,7 +7,7 @@
 
 #### Answer 1:
 
-- Number of ways to split the 10 people in teams of 6 and 4 are $^{10}C_{6}\, =\,^{10}C_{4}$
+- Number of ways to split the 10 people in teams of 6 and 4 are <sup>10</sup>*C*<sub>6</sub>  =  <sup>10</sup>*C*<sub>4</sub>
 - Number of ways to split the 10 people in teams of 5 and 5 are $^{10}C_{5}/2$. This is because the two groups are identical in number. Thus, division by 2.
 
 <hr style="height:1.5px;color:black;background-color:black">
