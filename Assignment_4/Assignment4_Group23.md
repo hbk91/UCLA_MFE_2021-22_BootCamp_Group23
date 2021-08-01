@@ -27,9 +27,6 @@ This is because the two groups are identical in number. Thus, division by 2.
 - Partitioning a Set: For every two sets $A$ and $B$, $B$ and $A \cap B^c$ are disjoint, Thus,
   \\[A \cup B = B \cup (A \cap B^c)\]    (1)
 
-<img src="https://render.githubusercontent.com/render/math?math=$$\frac{1}{2}5$$">
-
-<!-- $$\frac{4}{5}$$ --> <div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math="></div>
 
 
 
