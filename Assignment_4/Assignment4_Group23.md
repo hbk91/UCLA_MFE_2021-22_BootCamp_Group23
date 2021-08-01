@@ -80,7 +80,7 @@ $$S = \{X_1, X_2, X_3, ...., X_n\}$$
 Where,
   - $n \ge 2$
   - $X_n = \text{head}$
-  - $X_n = \text{head for exactly one h from the set}\{1,2,3,....n-1\}$
+  - $X_h = \text{head for exactly one h from the set}\{1,2,3,....n-1\}$
   - $X_t = \text{tail for all, except one from the set}\{1,2,3,....n-1\}$<br>
 
 Probability that exactly k tosses are required is the product of the following:
