@@ -14286,47 +14286,61 @@ $$\frac{^{10}C_5}{2}$$<p>This is because the two groups have identical count of 
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><hr style="height:1.5px;color:black;background-color:black"><br></p>
+<hr>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Q2.--Prove-$P(A-\cup-B)-=-P(A)-+-P(B)---P(A-\cap-B)$.-Hint:-The-goal-is-to-prove-this-mathematically-(not-using-Venn-diagrams).-Try-writing-$A-\cup-B$-as-union-of-three-disjoint-sets-and-then-apply-axiom-3-that-we-discussed-in-class.">Q2.  Prove $P(A \cup B) = P(A) + P(B) - P(A \cap B)$. Hint: The goal is to prove this mathematically (not using Venn diagrams). Try writing $A \cup B$ as union of three disjoint sets and then apply axiom 3 that we discussed in class.<a class="anchor-link" href="#Q2.--Prove-$P(A-\cup-B)-=-P(A)-+-P(B)---P(A-\cap-B)$.-Hint:-The-goal-is-to-prove-this-mathematically-(not-using-Venn-diagrams).-Try-writing-$A-\cup-B$-as-union-of-three-disjoint-sets-and-then-apply-axiom-3-that-we-discussed-in-class.">&#182;</a></h4>
+<h4>Q2.  Prove $P(A \cup B) = P(A) + P(B) - P(A \cap B)$. Hint: The goal is to prove this mathematically (not using Venn diagrams). Try writing $A \cup B$ as union of three disjoint sets and then apply axiom 3 that we discussed in class.<br></h4>
+
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h4 id="Answer-2:">Answer 2:<a class="anchor-link" href="#Answer-2:">&#182;</a></h4><ul>
-<li>Partitioning a Set: For any two sets $A$ and $B$, $B$ and $A \cap B^c$ are disjoint. Thus,</li>
-</ul>
-$$A \cup B = B \cup (A \cap B^c) \qquad (1)$$<ul>
-<li>For every finite sequence of n disjoint events $A_1,.....,A_n$, the probability of the union of the events is equal to the summation of their individual properties. Thus,</li>
-</ul>
-$$Pr(A \cup B) = Pr(B) \cup Pr(A \cap B^c) \qquad (2)$$<ul>
-<li>For any two events A and B, the events $A \cap B^c$ and $A \cap B$ are disjoint. Thus,</li>
-</ul>
-$$A = (A \cap B) \cup (A \cap B^c) \qquad (3)$$$$\implies Pr(A) = Pr(A \cap B) + Pr(A \cap B^c) \qquad (4)$$$$\implies Pr(A \cap B^c) = Pr(A) - Pr(A \cap B) \qquad (5)$$<ul>
-<li>Hence, from (1) and (5), we get,</li>
-</ul>
-$$Pr(A \cup B) = Pr(A) + Pr(B) - Pr(A \cap B) \qquad (6)$$<p>Q.E.D.</p>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><hr style="height:1.5px;color:black;background-color:black"><br></p>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Q3.-Two-people-take-turns-trying-to-sink-a-basketball-into-a-net.-Person-1-succeeds-with-probability-1/3-and-person-2-succeeds-with-probability-1/4.-What-is-the-probability-that-person-2-succeeds-before-person-1.-Additionally,-compute-the-probability-that-person-1-succeeds-before-person-2.">Q3. Two people take turns trying to sink a basketball into a net. Person 1 succeeds with probability 1/3 and person 2 succeeds with probability 1/4. What is the probability that person 2 succeeds before person 1. Additionally, compute the probability that person 1 succeeds before person 2.<a class="anchor-link" href="#Q3.-Two-people-take-turns-trying-to-sink-a-basketball-into-a-net.-Person-1-succeeds-with-probability-1/3-and-person-2-succeeds-with-probability-1/4.-What-is-the-probability-that-person-2-succeeds-before-person-1.-Additionally,-compute-the-probability-that-person-1-succeeds-before-person-2.">&#182;</a></h4><h4 id="Answer-3:">Answer 3:<a class="anchor-link" href="#Answer-3:">&#182;</a></h4>
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<li><p>The third axiom of probability states that, For every finite sequence of n disjoint events $A_1,.....,A_n$, the probability of the union of the events is equal to the summation of their individual properties</p>
+</li>
+<li><p>The union of two events, $A\cup B$, can be partitioned into three disjoint sets:</p>
 <ul>
+<li>Elements of $A$ that are not in $B$</li>
+<li>Elements of $B$ that are not in $A$</li>
+<li>Elements that are both in $A$ and $B$</li>
+</ul>
+</li>
+<li><p>Thus, $$P(A\cup B) = P(AB^c) + P(A^cB) + P(AB) \qquad (1)$$</p>
+</li>
+<li><p>Also because $AB^c$ and $AB$ are disjoint, thus,  $$P(A) = P(AB^c) + P(AB) \qquad (2)$$</p>
+</li>
+<li><p>Similarly, $$P(B) = P(BA^c) + P(AB) \qquad (3)$$</p>
+<ul>
+<li>Adding $(2)$ &amp; $(3)$, we get</li>
+</ul>
+</li>
+</ul>
+$$P(A) + P(B) = P(AB^c) + P(A^cB) +2*P(AB) \qquad(4)$$<p><br></p>
+<ul>
+<li>Comparing $(1)$ and $(4)$, we get $$P(A \cup B) = P(A) + P(B) - P(A \cap B) \qquad (5)$$</li>
+</ul>
+<p>Q.E.D.</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4>Q3. Two people take turns trying to sink a basketball into a net. Person 1 succeeds with probability 1/3 and person 2 succeeds with probability 1/4. What is the probability that person 2 succeeds before person 1. Additionally, compute the probability that person 1 succeeds before person 2.<br></h4>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4 id="Answer-3:">Answer 3:<a class="anchor-link" href="#Answer-3:">&#182;</a></h4><ul>
 <li>Let the probability of Person 1 succeeding, should the Person 1 go first, be denoted by <code>x</code>. <br></li>
 <li>Let the probability of Person 2 succeeding, should the Person 2 go first, be denoted by <code>y</code>. <br></li>
 </ul>
@@ -14349,13 +14363,70 @@ $$x = \frac{1}{3} + \frac{2}{3}(1-y) \qquad (1)$$$$y = \frac{1}{4} + \frac{3}{4}
 Probability of Person 1 succeeding first is $\frac{2}{3}$.</strong></p>
 
 </div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4>Q4. Suppose we toss a fair coin until we get exactly two heads. Describe the sample space S. What is the probability that exactly k tosses are required?<br></h4>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4 id="Answer-4:">Answer 4:<a class="anchor-link" href="#Answer-4:">&#182;</a></h4>$$S = \{X_1, X_2, X_3, ...., X_n\}$$<p>Where,</p>
+<ul>
+<li>$n \ge 2$</li>
+<li>$X_n = \text{head}$</li>
+<li>$X_n = \text{head for exactly one h from the set}\{1,2,3,....n-1\}$</li>
+<li>$X_t = \text{tail for all, except one from the set}\{1,2,3,....n-1\}$<br></li>
+</ul>
+<p>Probability that exactly k tosses are required is the product of the following:</p>
+<ul>
+<li>Probability of head on the final $k^{th}$ toss</li>
+<li>Probability of one head and rest all tails in $k-1$ tosses and the all possible combinations of such occurrences.</li>
+</ul>
+$$P =\,^{k-1}C_{k-2}*{\left(\frac{1}{2}\right)}^{k-2}*\frac{1}{2}*\frac{1}{2}$$$$\implies P = \frac{k-1}{2^k}$$
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4>Q5. Birth Month Problem - This is a variation of the birthday problem. How many people are needed in a room to make it possible that atleast two people have the same birth month with a probability of 50%. There are 12 months in a year and probability of being born in any month is the same. Hint: Try expressing the probability of atleast 2 people having the same birth month as a complementary event.<br></h4>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>Event $A$: At least two people have the same birthday month</li>
+<li>Event $\bar{A}$: No two people have the same birthday month</li>
+</ul>
+<p>Thus, $$P(\bar{A}) = \frac{12}{12}*\frac{11}{12}*\text{.....}*\frac{12-n+1}{12} \qquad (1)$$</p>
+<ul>
+<li>This is because the first person can have the birthday in any of the 12 months. The next person in rest of the 11 months and so on and so forth.</li>
+</ul>
+<p>Thus, $$P(\bar{A}) = 1- \frac{12}{12}*\frac{11}{12}*\text{.....}*\frac{12-n+1}{12} \qquad (2)$$</p>
+<p>Our answer would be the lowest value of n (number of people in the room) for which the probability in $(2)$ becomes greater than 0.5 <br></p>
+
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">prob_calculate</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">factorial</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span><span class="o">/</span><span class="n">factorial</span><span class="p">(</span><span class="mi">12</span><span class="o">-</span><span class="n">x</span><span class="p">)</span><span class="o">/</span><span class="mi">12</span><span class="o">**</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14363,6 +14434,80 @@ Probability of Person 1 succeeding first is $\frac{2}{3}$.</strong></p>
 </div>
 </div>
 
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[74]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Calculating Probability of atleast two people sharing the same birthday for n = 1 to 7 </span>
+<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">factorial</span>
+<span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <span class="n">pprint</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">arange</span>
+
+<span class="n">prob_dict</span> <span class="o">=</span> <span class="p">{</span><span class="n">x</span><span class="p">:</span> <span class="mi">1</span><span class="o">-</span> <span class="n">factorial</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span><span class="o">/</span><span class="n">factorial</span><span class="p">(</span><span class="mi">12</span><span class="o">-</span><span class="n">x</span><span class="p">)</span><span class="o">/</span><span class="mi">12</span><span class="o">**</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">7</span><span class="p">)}</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Probability Table for at least two people having the same birthday month:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">pprint</span><span class="p">(</span><span class="n">prob_dict</span><span class="p">,</span> <span class="n">sort_dicts</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Probability Table for at least two people having the same birthday month:
+
+{1: 0.0,
+ 2: 0.08333333333333337,
+ 3: 0.23611111111111116,
+ 4: 0.42708333333333337,
+ 5: 0.6180555555555556,
+ 6: 0.7771990740740741}
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><br>
+From the above, we can see that for n = 5 the probability value crosses the threshold of 0.5. <br></p>
+<p>Thus, there should be <strong>atleast 5 people in the room</strong> to make it possible that atleast two people have the same birth month with a probability of 50%</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4>6. (optional) Birth Month Paradox Advanced Version - In the above question, we assumed that the probability of being born in any month is equal. Historically, month of August has seen the largest number of births compared to any other month. If we were to incorporate this new information, say probability of being born in August is p and probability of being born in any other month is q. What would be your approach to solving the above problem with this new information? Hint : The trick here would still be to write the probabilities in terms of its complementary event. Try enumerating possible combinations and compute the probability using the non-uniform distribution.<br></h4>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4 id="Answer-6:">Answer 6:<a class="anchor-link" href="#Answer-6:">&#182;</a></h4>
+</div>
 </div>
 </body>
 
