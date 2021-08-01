@@ -51,8 +51,8 @@ Q.E.D.
 
 #### Answer 3:
 
-- Let the probability of Person 1 succeeding, should the Person 1 go first, be denoted by `x`. <br>
-- Let the probability of Person 2 succeeding, should the Person 2 go first, be denoted by `y`. <br>
+- Let the probability of Person 1 succeeding should Person 1 take the first turn, be denoted by `x`. <br>
+- Let the probability of Person 2 succeeding should Person 2 take the first turn, be denoted by `y`. <br>
 
 Thus,
 
@@ -63,7 +63,7 @@ $$y = \frac{1}{4} + \frac{3}{4}(1-x) \qquad (2)$$
     - Component A: Probability of the person winning on the first turn. For instance, $\frac{1}{3}$ in case of Person 1.
     - Component B: It is the product of the following two probabilities:
       -  Probability of the person losing on the first turn. For instance, $\frac{2}{3}$ in case of Person 1.
-      -  Probability of the person winning if he had started second which is equal to 1 - the probability of the other person winning if the other person took the turn first. For instance, $1-y$ in case of Person 1.
+      -  Probability of the person winning if the person had started second which is equal to 1 - the probability of the other person winning if the other person took the turn first. For instance, $1-y$ in case of Person 1.
 
 - Thus, on solving $(1)$ and $(2)$ above, we get $x = \frac{2}{3}$ and $y = \frac{1}{2}$ 
 
@@ -106,13 +106,13 @@ $$\implies P = \frac{k-1}{2^k}$$
 
 - Thus, $$P(\bar{A}) = 1- \frac{12}{12}*\frac{11}{12}*\text{.....}*\frac{12-n+1}{12} \qquad (2)$$
 
-- Our answer would be the lowest value of n (number of people in the room) for which the probability in $(2)$ becomes greater than 0.5 
+- Our answer would be the lowest value of n (number of people in the room) for which the probability in $(2)$ becomes greater than 0.5 <br>
+
+- n turns out to be 5. Thus, there should be atleast 5 people in the room to make it possible that atleast two people have the same birth month with a probability of 50%.
 
 <hr style="height:1.5px;color:black;background-color:black"><br>
-
-#### 6. (optional) Birth Month Paradox Advanced Version - In the above question, we assumed that the probability of being born in any month is equal. Historically, month of August has seen the largest number of births compared to any other month. If we were to incorporate this new information, say probability of being born in August is p and probability of being born in any other month is q. What would be your approach to solving the above problem with this new information? Hint : The trick here would still be to write the probabilities in terms of its complementary event. Try enumerating possible combinations and compute the probability using the non-uniform distribution.<br>
-
-#### Answer 6:
+<h2><p style="text-align:center;">The End.</p></h2>
+<hr style="height:1.5px;color:black;background-color:black"><br>
 
 
 
