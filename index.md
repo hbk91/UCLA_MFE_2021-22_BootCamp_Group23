@@ -22,7 +22,7 @@ Assignment 3 </a>
 
 ### Probability Assignments:
 
-<ol type="4">
+<ol start="4">
 <li>
 <a href= 'https://hbk91.github.io/UCLA_MFE_2021-22_BootCamp_Group23/Assignment_4/Assignment4_Group23.html' target='_blank'>
 Assignment 4 </a>
