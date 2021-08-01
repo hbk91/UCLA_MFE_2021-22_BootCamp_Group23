@@ -8,7 +8,7 @@
 #### Answer 1:
 
 - Number of ways to split the 10 people in teams of 6 and 4 are <sup>10</sup>*C*<sub>6</sub>  =  <sup>10</sup>*C*<sub>4</sub>
-- Number of ways to split the 10 people in teams of 5 and 5 are $^{10}C_{5}/2$. This is because the two groups are identical in number. Thus, division by 2.
+- Number of ways to split the 10 people in teams of 5 and 5 are <!-- $^{10}C_5/2$ --> <img style="transform: translateY(0.1em); background: white;" src="svg\OXbuvREQhU.svg"> This is because the two groups are identical in number. Thus, division by 2.
 
 <hr style="height:1.5px;color:black;background-color:black">
 
@@ -20,7 +20,14 @@
   \\[A \cup B = B \cup (A \cap B^c)\]    (1)
 
 <img src="https://render.githubusercontent.com/render/math?math=$$\frac{1}{2}5$$">
-    
+
+<!-- $$\frac{4}{5}$$ --> 
+
+<div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math="></div>
+
+
+
+
 
 
 
