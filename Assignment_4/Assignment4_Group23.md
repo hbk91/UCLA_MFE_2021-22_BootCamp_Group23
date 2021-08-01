@@ -104,7 +104,7 @@ $$\implies P = \frac{k-1}{2^k}$$
 
 - This is because the first person can have the birthday in any of the 12 months. The next person in rest of the 11 months and so on and so forth.
 
-- Thus, $$P(\bar{A}) = 1- \frac{12}{12}*\frac{11}{12}*\text{.....}*\frac{12-n+1}{12} \qquad (2)$$
+- Thus, $$P(A) = 1- \frac{12}{12}*\frac{11}{12}*\text{.....}*\frac{12-n+1}{12} \qquad (2)$$
 
 - Our answer would be the lowest value of n (number of people in the room) for which the probability in $(2)$ becomes greater than 0.5 <br>
 
