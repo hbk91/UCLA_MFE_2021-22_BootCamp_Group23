@@ -14280,7 +14280,7 @@ a.anchor-link {
 $$^{10}C_6\,=\,^{10}C_4$$<ul>
 <li>Number of ways to split the 10 people in teams of 5 and 5 are:</li>
 </ul>
-$$\frac{^{10}C_5}{2}$$<p>This is because the two groups are identical in number. Thus, division by 2.</p>
+$$\frac{^{10}C_5}{2}$$<p>This is because the two groups have identical count of people. Hence, the division by two.</p>
 
 </div>
 </div>
@@ -14318,6 +14318,51 @@ $$Pr(A \cup B) = Pr(A) + Pr(B) - Pr(A \cap B) \qquad (6)$$<p>Q.E.D.</p>
 <p><hr style="height:1.5px;color:black;background-color:black"><br></p>
 
 </div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4 id="Q3.-Two-people-take-turns-trying-to-sink-a-basketball-into-a-net.-Person-1-succeeds-with-probability-1/3-and-person-2-succeeds-with-probability-1/4.-What-is-the-probability-that-person-2-succeeds-before-person-1.-Additionally,-compute-the-probability-that-person-1-succeeds-before-person-2.">Q3. Two people take turns trying to sink a basketball into a net. Person 1 succeeds with probability 1/3 and person 2 succeeds with probability 1/4. What is the probability that person 2 succeeds before person 1. Additionally, compute the probability that person 1 succeeds before person 2.<a class="anchor-link" href="#Q3.-Two-people-take-turns-trying-to-sink-a-basketball-into-a-net.-Person-1-succeeds-with-probability-1/3-and-person-2-succeeds-with-probability-1/4.-What-is-the-probability-that-person-2-succeeds-before-person-1.-Additionally,-compute-the-probability-that-person-1-succeeds-before-person-2.">&#182;</a></h4><h4 id="Answer-3:">Answer 3:<a class="anchor-link" href="#Answer-3:">&#182;</a></h4>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>Let the probability of Person 1 succeeding, should the Person 1 go first, be denoted by <code>x</code>. <br></li>
+<li>Let the probability of Person 2 succeeding, should the Person 2 go first, be denoted by <code>y</code>. <br></li>
+</ul>
+<p>Thus,</p>
+$$x = \frac{1}{3} + \frac{2}{3}(1-y) \qquad (1)$$$$y = \frac{1}{4} + \frac{3}{4}(1-x) \qquad (2)$$<ul>
+<li><p>Thus for each person the probability of winning is the sum of the following two components viz.</p>
+<ul>
+<li>Component A: Probability of the person winning on the first turn. For instance, $\frac{1}{3}$ in case of Person 1.</li>
+<li>Component B: It is the product of the following two probabilities:<ul>
+<li>Probability of the person losing on the first turn. For instance, $\frac{2}{3}$ in case of Person 1.</li>
+<li>Probability of the person winning if he had started second which is equal to 1 - the probability of the other person winning if the other person took the turn first. For instance, $1-y$ in case of Person 1.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Thus, on solving $(1)$ and $(2)$ above, we get $x = \frac{2}{3}$ and $y = \frac{1}{2}$</p>
+</li>
+</ul>
+<p><strong>Thus, Probability of Person 2 succeeding first is $\frac{1}{2}$.<br>
+Probability of Person 1 succeeding first is $\frac{2}{3}$.</strong></p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
 </div>
 </body>
 
