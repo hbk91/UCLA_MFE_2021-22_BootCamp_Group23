@@ -14268,21 +14268,19 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4>Q1.Quant Interview: A quant driven hedge fund wants to interview all the UCLA MFE students for an internship. Say 50% of all students who received their first interview received a second interview. 95% of the people interviewed that got a second interview said they had a good first interview. 75% of the people interviewed that did not get a second interview said they had a good first interview. If you felt you had a good first interview, what is the probability that you will receive a second interview? Alternatively, if you felt you had a bad first interview, what is the probability that you will receive a second interview?<br></h4>
-
+<h4 id="Q1.-Quant-Interview:-A-quant-driven-hedge-fund-wants-to-interview-all-the-UCLA-MFE-students-for-an-internship.-Say-50%-of-all-students-who-received-their-first-interview-received-a-second-interview.-95%-of-the-people-interviewed-that-got-a-second-interview-said-they-had-a-good-first-interview.-75%-of-the-people-interviewed-that-did-not-get-a-second-interview-said-they-had-a-good-first-interview.-If-you-felt-you-had-a-good-first-interview,-what-is-the-probability-that-you-will-receive-a-second-interview?-Alternatively,-if-you-felt-you-had-a-bad-first-interview,-what-is-the-probability-that-you-will-receive-a-second-interview?"><strong>Q1.</strong> Quant Interview: A quant driven hedge fund wants to interview all the UCLA MFE students for an internship. Say 50% of all students who received their first interview received a second interview. 95% of the people interviewed that got a second interview said they had a good first interview. 75% of the people interviewed that did not get a second interview said they had a good first interview. If you felt you had a good first interview, what is the probability that you will receive a second interview? Alternatively, if you felt you had a bad first interview, what is the probability that you will receive a second interview?<a class="anchor-link" href="#Q1.-Quant-Interview:-A-quant-driven-hedge-fund-wants-to-interview-all-the-UCLA-MFE-students-for-an-internship.-Say-50%-of-all-students-who-received-their-first-interview-received-a-second-interview.-95%-of-the-people-interviewed-that-got-a-second-interview-said-they-had-a-good-first-interview.-75%-of-the-people-interviewed-that-did-not-get-a-second-interview-said-they-had-a-good-first-interview.-If-you-felt-you-had-a-good-first-interview,-what-is-the-probability-that-you-will-receive-a-second-interview?-Alternatively,-if-you-felt-you-had-a-bad-first-interview,-what-is-the-probability-that-you-will-receive-a-second-interview?">&#182;</a></h4>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Answer-1:">Answer 1:<a class="anchor-link" href="#Answer-1:">&#182;</a></h4><p><strong>Let:</strong></p>
-<ul>
+<h4 id="Answer-1:"><strong>Answer 1:</strong><a class="anchor-link" href="#Answer-1:">&#182;</a></h4><h4 id="Let:"><strong>Let:</strong><a class="anchor-link" href="#Let:">&#182;</a></h4><ul>
 <li>The probability of the first interview being felt good be denoted by $P(First_{FG})$</li>
 <li>The probability of the first interview being felt bad be denoted by $P(First_{FB})$</li>
 <li>The probability of receiving a second interview be denoted by $P(Y_{second})$</li>
 <li>The probability of receiving a second interview be denoted by $P(N_{second})$</li>
 </ul>
 <p><strong>Therefore, $P(Y_{second}|First_{FG})$ using Bayes' Theorem is:</strong></p>
-$$P(Y_{second}|First_{FG}) = P(First_{FG}|Y_{second})*\frac{P(Y_{second})}{P(First_{FG})}$$$$\implies P(Y_{second}|First_{FG}) = 0.95*\frac{0.5}{0.5*0.95+0.5*0.75}$$$$\implies P(Y_{second}|First_{FG}) = 0.55588$$<p><br></p>
+$$P(Y_{second}|First_{FG}) = P(First_{FG}|Y_{second})*\frac{P(Y_{second})}{P(First_{FG})}$$$$\implies P(Y_{second}|First_{FG}) = 0.95*\frac{0.5}{0.5*0.95+0.5*0.75}$$$$\implies P(Y_{second}|First_{FG}) = 0.5588$$<p><br></p>
 <p><strong>Similarly, $P(Y_{second}|First_{FB})$ is:</strong></p>
 $$P(Y_{second}|First_{FB}) = P(First_{FB}|Y_{second})*\frac{P(Y_{second})}{P(First_{FB})}$$$$\implies P(Y_{second}|First_{FB}) = 0.05*\frac{0.5}{0.5*0.05+0.5*0.25}$$$$\implies P(Y_{second}|First_{FB}) = 0.1667$$
 </div>
@@ -14296,7 +14294,8 @@ $$P(Y_{second}|First_{FB}) = P(First_{FB}|Y_{second})*\frac{P(Y_{second})}{P(Fir
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Q2.-Hypothesis-Testing:-There-are-two-biased-coins-A-and-B-in-a-bag.-Probability-of-heads-for-coin-A-is-0.75-and-the-probability-of-heads-for-coin-B-is-0.3.-You-pick-a-coin-randomly-and-perform-10-tosses-(without-knowing-which-coin-you-picked).-Hint:-To-solve-the-two-problems-below,-compute-the-posterior-probability-P(Hypothesis|Data)-and-argue-that-one-of-the-coin-has-a-higher-posterior-probability.-You-will-have-to-test-and-compare-the-two-hypothesis---picking-coin-A-given-data-and-picking-coin-B-given-data.-Since-we-are-choosing-a-coin-randomly,-P(picking-coin-A)-=-(picking-coin-B)-=-1/2.-Key-takeaway-is-how-the-data-changes-your-beliefs-about-which-coin-you-picked.">Q2. Hypothesis Testing: There are two biased coins A and B in a bag. Probability of heads for coin A is 0.75 and the probability of heads for coin B is 0.3. You pick a coin randomly and perform 10 tosses (without knowing which coin you picked). Hint: To solve the two problems below, compute the posterior probability P(Hypothesis|Data) and argue that one of the coin has a higher posterior probability. You will have to test and compare the two hypothesis - picking coin A given data and picking coin B given data. Since we are choosing a coin randomly, P(picking coin A) = (picking coin B) = 1/2. Key takeaway is how the data changes your beliefs about which coin you picked.<a class="anchor-link" href="#Q2.-Hypothesis-Testing:-There-are-two-biased-coins-A-and-B-in-a-bag.-Probability-of-heads-for-coin-A-is-0.75-and-the-probability-of-heads-for-coin-B-is-0.3.-You-pick-a-coin-randomly-and-perform-10-tosses-(without-knowing-which-coin-you-picked).-Hint:-To-solve-the-two-problems-below,-compute-the-posterior-probability-P(Hypothesis|Data)-and-argue-that-one-of-the-coin-has-a-higher-posterior-probability.-You-will-have-to-test-and-compare-the-two-hypothesis---picking-coin-A-given-data-and-picking-coin-B-given-data.-Since-we-are-choosing-a-coin-randomly,-P(picking-coin-A)-=-(picking-coin-B)-=-1/2.-Key-takeaway-is-how-the-data-changes-your-beliefs-about-which-coin-you-picked.">&#182;</a></h4><p><strong>i.</strong> You observe that you get 8 heads and 2 tails from your coin tosses. What is the probability that you picked coin A from the bag given the data. Compare this with the posterior probability of picking the other coin.<br>
+<h4><strong>Q2.</strong> Hypothesis Testing: There are two biased coins A and B in a bag. Probability of heads for coin A is 0.75 and the probability of heads for coin B is 0.3. You pick a coin randomly and perform 10 tosses (without knowing which coin you picked). Hint: To solve the two problems below, compute the posterior probability P(Hypothesis|Data) and argue that one of the coin has a higher posterior probability. You will have to test and compare the two hypothesis - picking coin A given data and picking coin B given data. Since we are choosing a coin randomly, P(picking coin A) = (picking coin B) = 1/2. Key takeaway is how the data changes your beliefs about which coin you picked.<br><br></h4>
+<p><strong>i.</strong> You observe that you get 8 heads and 2 tails from your coin tosses. What is the probability that you picked coin A from the bag given the data. Compare this with the posterior probability of picking the other coin.<br><br>
 <strong>ii.</strong> Now, say you observed 8 tails and 2 heads from your coin tosses. What is the probability that you picked coin B given the data. Compare this with the posterior probability of picking the other coin.<br></p>
 
 </div>
@@ -14308,13 +14307,11 @@ $$P(Y_{second}|First_{FB}) = P(First_{FB}|Y_{second})*\frac{P(Y_{second})}{P(Fir
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Answer-2:">Answer 2:<a class="anchor-link" href="#Answer-2:">&#182;</a></h4><p><strong>Let:</strong></p>
-<ul>
+<h4 id="Answer-2:"><strong>Answer 2:</strong><a class="anchor-link" href="#Answer-2:">&#182;</a></h4><h4 id="Let:"><strong>Let:</strong><a class="anchor-link" href="#Let:">&#182;</a></h4><ul>
 <li>The probability for coin A be denoted by $P(A)$</li>
 <li>The probability for coin B be denoted by $P(B)$</li>
 </ul>
-<h4 id="i.-8-heads-&amp;-2-tails:">i. 8 heads &amp; 2 tails:<a class="anchor-link" href="#i.-8-heads-&amp;-2-tails:">&#182;</a></h4><p><strong>Let:</strong></p>
-<ul>
+<h4 id="i.-8-heads-&amp;-2-tails:">i. 8 heads &amp; 2 tails:<a class="anchor-link" href="#i.-8-heads-&amp;-2-tails:">&#182;</a></h4><h4 id="Let:"><strong>Let:</strong><a class="anchor-link" href="#Let:">&#182;</a></h4><ul>
 <li>The Probability of 8 heads and 2 tails be denoted by $P(8_H2_T)$ </li>
 </ul>
 <p><strong>Therefore, $P(A|8_H2_T)$ using Bayes' Theorem is:</strong></p>
@@ -14322,8 +14319,7 @@ $$P(A|8_H2_T) = P(8_H2_T|A)*\frac{P(A)}{P(8_H2_T)}$$$$\implies P(A|8_H2_T) =\, ^
 $$P(B|8_H2_T) = P(8_H2_T|B)*\frac{P(B)}{P(8_H2_T)}$$$$\implies P(B|8_H2_T) =\, ^{10}C_8(0.3)^8(0.7)^2*\frac{0.5}{^{10}C_8(0.75)^8(0.25)^2+ ^{10}C_8(0.3)^8(0.7)^2}$$$$\implies P(A|8_H2_T) = 0.0026$$<p><br></p>
 <p><strong>Thus, given our observed data, there is much higher probability that coin A was initially picked.</strong></p>
 <p><br></p>
-<h4 id="ii.-2-heads-&amp;-8-tails:">ii. 2 heads &amp; 8 tails:<a class="anchor-link" href="#ii.-2-heads-&amp;-8-tails:">&#182;</a></h4><p><strong>Let:</strong></p>
-<ul>
+<h4 id="ii.-2-heads-&amp;-8-tails:">ii. 2 heads &amp; 8 tails:<a class="anchor-link" href="#ii.-2-heads-&amp;-8-tails:">&#182;</a></h4><h4 id="Let:"><strong>Let:</strong><a class="anchor-link" href="#Let:">&#182;</a></h4><ul>
 <li>The Probability of 8 heads and 2 tails be denoted by $P(8_H2_T)$ </li>
 </ul>
 <p><strong>Therefore, $P(B|2_H8_T)$ using Bayes' Theorem is:</strong></p>
@@ -14336,7 +14332,7 @@ $$P(A|2_H8_T) = P(2_H8_T|A)*\frac{P(A)}{P(2_H8_T)}$$$$\implies P(A|2_H8_T) =\, ^
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## Calculations are shown below:</span>
@@ -14381,7 +14377,7 @@ $$P(A|2_H8_T) = P(2_H8_T|A)*\frac{P(A)}{P(2_H8_T)}$$$$\implies P(A|2_H8_T) =\, ^
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Probabilty of Coin B given 8 heads &amp; 2 Tails</span>
@@ -14422,7 +14418,7 @@ $$P(A|2_H8_T) = P(2_H8_T|A)*\frac{P(A)}{P(2_H8_T)}$$$$\implies P(A|2_H8_T) =\, ^
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Probabilty of Coin B given 2 heads &amp; 8 Tails</span>
@@ -14463,7 +14459,7 @@ $$P(A|2_H8_T) = P(2_H8_T|A)*\frac{P(A)}{P(2_H8_T)}$$$$\implies P(A|2_H8_T) =\, ^
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Probabilty of Coin A given 2 heads &amp; 8 Tails</span>
@@ -14505,7 +14501,17 @@ $$P(A|2_H8_T) = P(2_H8_T|A)*\frac{P(A)}{P(2_H8_T)}$$$$\implies P(A|2_H8_T) =\, ^
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <hr>
-<h2><p style="text-align:center;">The End.</p></h2><hr>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2><p style="text-align:center;">The End.</p></h2>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
 
 </div>
 </div>
