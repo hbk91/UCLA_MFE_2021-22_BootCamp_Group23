@@ -16,7 +16,7 @@ Group 23: Aman Jindal | Yuhang Jiang | Daniel Gabriel Tan | Qining Liu
 - The probability of receiving a second interview be denoted by $P(Y_{second})$
 - The probability of receiving a second interview be denoted by $P(N_{second})$
 
-**Therefore, $P(Y_{second}|First_{FG})$ using Bayes' Theorem is:**
+**$P(Y_{second}|First_{FG})$ using Bayes' Theorem is:**
 
 $$P(Y_{second}|First_{FG}) = P(First_{FG}|Y_{second})*\frac{P(Y_{second})}{P(First_{FG})}$$
 
@@ -55,7 +55,7 @@ $$\implies P(Y_{second}|First_{FB}) = 0.1667$$
 **Let:** 
 - The Probability of 8 heads and 2 tails be denoted by $P(8_H2_T)$ 
 
-**Therefore, $P(A|8_H2_T)$ using Bayes' Theorem is:**
+**$P(A|8_H2_T)$ using Bayes' Theorem is:**
 
 $$P(A|8_H2_T) = P(8_H2_T|A)*\frac{P(A)}{P(8_H2_T)}$$
 
@@ -63,7 +63,7 @@ $$\implies P(A|8_H2_T) =\, ^{10}C_8(0.75)^8(0.25)^2*\frac{0.5}{^{10}C_8(0.75)^8(
 
 $$\implies P(A|8_H2_T) = 0.9949$$
 
-**Therefore, $P(B|8_H2_T)$ is:**
+**Similarly, $P(B|8_H2_T)$ is:**
 
 $$P(B|8_H2_T) = P(8_H2_T|B)*\frac{P(B)}{P(8_H2_T)}$$
 
@@ -83,7 +83,7 @@ $$\implies P(B|8_H2_T) = 0.0051$$
 - The Probability of 8 heads and 2 tails be denoted by $P(8_H2_T)$ 
 
 
-**Therefore, $P(B|2_H8_T)$ using Bayes' Theorem is:**
+**$P(B|2_H8_T)$ using Bayes' Theorem is:**
 
 $$P(B|2_H8_T) = P(2_H8_T|B)*\frac{P(B)}{P(2_H8_T)}$$
 
