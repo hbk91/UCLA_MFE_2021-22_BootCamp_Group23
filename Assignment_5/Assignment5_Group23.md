@@ -101,7 +101,7 @@ $$\implies P(A|2_H8_T) = 0.0008$$
 
 <br>
 
-**Thus, given our observed data, there is much higher probability that coin A was initially picked.**
+**Thus, given our observed data, there is much higher probability that coin B was initially picked.**
 
 <br>
 
