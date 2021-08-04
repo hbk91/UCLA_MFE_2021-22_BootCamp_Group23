@@ -61,7 +61,7 @@ $$P(A|8_H2_T) = P(8_H2_T|A)*\frac{P(A)}{P(8_H2_T)}$$
 
 $$\implies P(A|8_H2_T) =\, ^{10}C_8(0.75)^8(0.25)^2*\frac{0.5}{^{10}C_8(0.75)^8(0.25)^2+ ^{10}C_8(0.3)^8(0.7)^2}$$
 
-$$\implies P(A|8_H2_T) = 0.4974$$
+$$\implies P(A|8_H2_T) = 0.9949$$
 
 **Therefore, $P(B|8_H2_T)$ is:**
 
@@ -69,7 +69,7 @@ $$P(B|8_H2_T) = P(8_H2_T|B)*\frac{P(B)}{P(8_H2_T)}$$
 
 $$\implies P(B|8_H2_T) =\, ^{10}C_8(0.3)^8(0.7)^2*\frac{0.5}{^{10}C_8(0.75)^8(0.25)^2+ ^{10}C_8(0.3)^8(0.7)^2}$$
 
-$$\implies P(A|8_H2_T) = 0.0026$$
+$$\implies P(B|8_H2_T) = 0.0051$$
 <br>
 
 **Thus, given our observed data, there is much higher probability that coin A was initially picked.**
@@ -89,7 +89,7 @@ $$P(B|2_H8_T) = P(2_H8_T|B)*\frac{P(B)}{P(2_H8_T)}$$
 
 $$\implies P(B|2_H8_T) =\, ^{10}C_2(0.3)^2(0.7)^8*\frac{0.5}{^{10}C_2(0.75)^2(0.25)^8+ ^{10}C_2(0.3)^2(0.7)^8}$$
 
-$$\implies P(B|2_H8_T) = 0.4492$$
+$$\implies P(B|2_H8_T) = 0.9983$$
 
 **Similarly, $P(A|2_H8_T)$ is:**
 
@@ -97,7 +97,7 @@ $$P(A|2_H8_T) = P(2_H8_T|A)*\frac{P(A)}{P(2_H8_T)}$$
 
 $$\implies P(A|2_H8_T) =\, ^{10}C_2(0.75)^2(0.25)^8*\frac{0.5}{^{10}C_2(0.75)^2(0.25)^8+ ^{10}C_2(0.3)^2(0.7)^8}$$
 
-$$\implies P(A|2_H8_T) = 0.0008$$
+$$\implies P(A|2_H8_T) = 0.0017$$
 
 <br>
 

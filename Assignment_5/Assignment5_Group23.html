@@ -14311,20 +14311,30 @@ $$P(Y_{second}|First_{FB}) = P(First_{FB}|Y_{second})*\frac{P(Y_{second})}{P(Fir
 <li>The probability for coin A be denoted by $P(A)$</li>
 <li>The probability for coin B be denoted by $P(B)$</li>
 </ul>
-<h4 id="i.-8-heads-&amp;-2-tails:">i. 8 heads &amp; 2 tails:<a class="anchor-link" href="#i.-8-heads-&amp;-2-tails:">&#182;</a></h4><h4 id="Let:"><strong>Let:</strong><a class="anchor-link" href="#Let:">&#182;</a></h4><ul>
+<h4 id="i.-8-heads-&amp;-2-tails:"><strong>i. 8 heads &amp; 2 tails:</strong><a class="anchor-link" href="#i.-8-heads-&amp;-2-tails:">&#182;</a></h4><h4 id="Let:"><strong>Let:</strong><a class="anchor-link" href="#Let:">&#182;</a></h4><ul>
 <li>The Probability of 8 heads and 2 tails be denoted by $P(8_H2_T)$ </li>
 </ul>
-<p><strong>Therefore, $P(A|8_H2_T)$ using Bayes' Theorem is:</strong></p>
-$$P(A|8_H2_T) = P(8_H2_T|A)*\frac{P(A)}{P(8_H2_T)}$$$$\implies P(A|8_H2_T) =\, ^{10}C_8(0.75)^8(0.25)^2*\frac{0.5}{^{10}C_8(0.75)^8(0.25)^2+ ^{10}C_8(0.3)^8(0.7)^2}$$$$\implies P(A|8_H2_T) = 0.4974$$<p><strong>Therefore, $P(B|8_H2_T)$ is:</strong></p>
-$$P(B|8_H2_T) = P(8_H2_T|B)*\frac{P(B)}{P(8_H2_T)}$$$$\implies P(B|8_H2_T) =\, ^{10}C_8(0.3)^8(0.7)^2*\frac{0.5}{^{10}C_8(0.75)^8(0.25)^2+ ^{10}C_8(0.3)^8(0.7)^2}$$$$\implies P(A|8_H2_T) = 0.0026$$<p><br></p>
+<p><strong>Therefore, $P(A|8_H2_T)$ using Bayes' Theorem is:</strong> <br></p>
+$$P(A|8_H2_T) = P(8_H2_T|A)*\frac{P(A)}{P(8_H2_T)}$$<p><br></p>
+$$\implies P(A|8_H2_T) =\, ^{10}C_8(0.75)^8(0.25)^2*\frac{0.5}{0.5*[^{10}C_8(0.75)^8(0.25)^2]+ 0.5*[^{10}C_8(0.3)^8(0.7)^2]}$$<p><br></p>
+$$\implies P(A|8_H2_T) = 0.9949$$<p><br></p>
+<p><strong>Therefore, $P(B|8_H2_T)$ is:</strong> <br></p>
+$$P(B|8_H2_T) = P(8_H2_T|B)*\frac{P(B)}{P(8_H2_T)}$$<p><br></p>
+$$\implies P(B|8_H2_T) =\, ^{10}C_8(0.3)^8(0.7)^2*\frac{0.5}{0.5*[^{10}C_8(0.75)^8(0.25)^2]+ 0.5*[^{10}C_8(0.3)^8(0.7)^2]}$$<p><br></p>
+$$\implies P(B|8_H2_T) = 0.0051$$<p><br></p>
 <p><strong>Thus, given the observed data, there is much higher probability that coin A was initially picked.</strong></p>
 <p><br></p>
-<h4 id="ii.-2-heads-&amp;-8-tails:">ii. 2 heads &amp; 8 tails:<a class="anchor-link" href="#ii.-2-heads-&amp;-8-tails:">&#182;</a></h4><h4 id="Let:"><strong>Let:</strong><a class="anchor-link" href="#Let:">&#182;</a></h4><ul>
+<h4 id="ii.-2-heads-&amp;-8-tails:"><strong>ii. 2 heads &amp; 8 tails:</strong><a class="anchor-link" href="#ii.-2-heads-&amp;-8-tails:">&#182;</a></h4><h4 id="Let:"><strong>Let:</strong><a class="anchor-link" href="#Let:">&#182;</a></h4><ul>
 <li>The Probability of 8 heads and 2 tails be denoted by $P(8_H2_T)$ </li>
 </ul>
 <p><strong>Therefore, $P(B|2_H8_T)$ using Bayes' Theorem is:</strong></p>
-$$P(B|2_H8_T) = P(2_H8_T|B)*\frac{P(B)}{P(2_H8_T)}$$$$\implies P(B|2_H8_T) =\, ^{10}C_2(0.3)^2(0.7)^8*\frac{0.5}{^{10}C_2(0.75)^2(0.25)^8+ ^{10}C_2(0.3)^2(0.7)^8}$$$$\implies P(B|2_H8_T) = 0.4492$$<p><strong>Similarly, $P(A|2_H8_T)$ is:</strong></p>
-$$P(A|2_H8_T) = P(2_H8_T|A)*\frac{P(A)}{P(2_H8_T)}$$$$\implies P(A|2_H8_T) =\, ^{10}C_2(0.75)^2(0.25)^8*\frac{0.5}{^{10}C_2(0.75)^2(0.25)^8+ ^{10}C_2(0.3)^2(0.7)^8}$$$$\implies P(A|2_H8_T) = 0.0008$$<p><br></p>
+$$P(B|2_H8_T) = P(2_H8_T|B)*\frac{P(B)}{P(2_H8_T)}$$<p><br></p>
+$$\implies P(B|2_H8_T) =\, ^{10}C_2(0.3)^2(0.7)^8*\frac{0.5}{0.5*[^{10}C_2(0.75)^2(0.25)^8]+ 0.5*[^{10}C_2(0.3)^2(0.7)^8]}$$<p><br></p>
+$$\implies P(B|2_H8_T) = 0.9983$$<p><br></p>
+<p><strong>Similarly, $P(A|2_H8_T)$ is:</strong> <br></p>
+$$P(A|2_H8_T) = P(2_H8_T|A)*\frac{P(A)}{P(2_H8_T)}$$<p><br></p>
+$$\implies P(A|2_H8_T) =\, ^{10}C_2(0.75)^2(0.25)^8*\frac{0.5}{0.5*[^{10}C_2(0.75)^2(0.25)^8]+ 0.5*[^{10}C_2(0.3)^2(0.7)^8]}$$<p><br></p>
+$$\implies P(A|2_H8_T) = 0.0017$$<p><br></p>
 <p><strong>Thus, given the observed data, there is much higher probability that coin B was initially picked.</strong></p>
 <p><br></p>
 
@@ -14341,11 +14351,11 @@ $$P(A|2_H8_T) = P(2_H8_T|A)*\frac{P(A)}{P(2_H8_T)}$$$$\implies P(A|2_H8_T) =\, ^
 
 <span class="c1"># Probabilty of Coin A given 8 heads &amp; 2 Tails</span>
 
-<span class="n">p</span> <span class="o">=</span> <span class="n">comb</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.75</span><span class="o">**</span><span class="mi">8</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.25</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
-<span class="n">q</span> <span class="o">=</span> <span class="mf">0.5</span>
-<span class="n">r</span> <span class="o">=</span> <span class="n">comb</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.75</span><span class="o">**</span><span class="mi">8</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.25</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="n">comb</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.3</span><span class="o">**</span><span class="mi">8</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.7</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
-<span class="n">ans</span> <span class="o">=</span> <span class="n">p</span><span class="o">*</span><span class="n">q</span><span class="o">/</span><span class="n">r</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Probability of Coin A given 8 Heads &amp; 2 Tails = </span><span class="si">{:.4f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ans</span><span class="p">))</span> 
+<span class="n">p1</span> <span class="o">=</span> <span class="n">comb</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.75</span><span class="o">**</span><span class="mi">8</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.25</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">q1</span> <span class="o">=</span> <span class="mf">0.5</span>
+<span class="n">r1</span> <span class="o">=</span> <span class="mf">0.5</span><span class="o">*</span><span class="n">comb</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.75</span><span class="o">**</span><span class="mi">8</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.25</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="mf">0.5</span><span class="o">*</span><span class="n">comb</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.3</span><span class="o">**</span><span class="mi">8</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.7</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">ans1</span> <span class="o">=</span> <span class="n">p1</span><span class="o">*</span><span class="n">q1</span><span class="o">/</span><span class="n">r1</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Probability of Coin A given 8 Heads &amp; 2 Tails = </span><span class="si">{:.4f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ans1</span><span class="p">))</span> 
 </pre></div>
 
      </div>
@@ -14365,7 +14375,7 @@ $$P(A|2_H8_T) = P(2_H8_T|A)*\frac{P(A)}{P(2_H8_T)}$$$$\implies P(A|2_H8_T) =\, ^
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Probability of Coin A given 8 Heads &amp; 2 Tails = 0.4974
+<pre>Probability of Coin A given 8 Heads &amp; 2 Tails = 0.9949
 </pre>
 </div>
 </div>
@@ -14382,11 +14392,11 @@ $$P(A|2_H8_T) = P(2_H8_T|A)*\frac{P(A)}{P(2_H8_T)}$$$$\implies P(A|2_H8_T) =\, ^
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Probabilty of Coin B given 8 heads &amp; 2 Tails</span>
 
-<span class="n">p</span> <span class="o">=</span> <span class="n">comb</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.3</span><span class="o">**</span><span class="mi">8</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.7</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
-<span class="n">q</span> <span class="o">=</span> <span class="mf">0.5</span>
-<span class="n">r</span> <span class="o">=</span> <span class="n">comb</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.75</span><span class="o">**</span><span class="mi">8</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.25</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="n">comb</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.3</span><span class="o">**</span><span class="mi">8</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.7</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
-<span class="n">ans</span> <span class="o">=</span> <span class="n">p</span><span class="o">*</span><span class="n">q</span><span class="o">/</span><span class="n">r</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Probability of Coin B given 8 Heads &amp; 2 Tails = </span><span class="si">{:.4f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ans</span><span class="p">))</span> 
+<span class="n">p2</span> <span class="o">=</span> <span class="n">comb</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.3</span><span class="o">**</span><span class="mi">8</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.7</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">q2</span> <span class="o">=</span> <span class="mf">0.5</span>
+<span class="n">r2</span> <span class="o">=</span> <span class="mf">0.5</span><span class="o">*</span><span class="n">comb</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.75</span><span class="o">**</span><span class="mi">8</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.25</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="mf">0.5</span><span class="o">*</span><span class="n">comb</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.3</span><span class="o">**</span><span class="mi">8</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.7</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">ans2</span> <span class="o">=</span> <span class="n">p2</span><span class="o">*</span><span class="n">q2</span><span class="o">/</span><span class="n">r2</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Probability of Coin B given 8 Heads &amp; 2 Tails = </span><span class="si">{:.4f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ans2</span><span class="p">))</span> 
 </pre></div>
 
      </div>
@@ -14406,7 +14416,7 @@ $$P(A|2_H8_T) = P(2_H8_T|A)*\frac{P(A)}{P(2_H8_T)}$$$$\implies P(A|2_H8_T) =\, ^
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Probability of Coin B given 8 Heads &amp; 2 Tails = 0.0026
+<pre>Probability of Coin B given 8 Heads &amp; 2 Tails = 0.0051
 </pre>
 </div>
 </div>
@@ -14423,11 +14433,11 @@ $$P(A|2_H8_T) = P(2_H8_T|A)*\frac{P(A)}{P(2_H8_T)}$$$$\implies P(A|2_H8_T) =\, ^
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Probabilty of Coin B given 2 heads &amp; 8 Tails</span>
 
-<span class="n">p</span> <span class="o">=</span> <span class="n">comb</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.3</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.7</span><span class="o">**</span><span class="mi">8</span><span class="p">)</span>
-<span class="n">q</span> <span class="o">=</span> <span class="mf">0.5</span>
-<span class="n">r</span> <span class="o">=</span> <span class="n">comb</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.75</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.25</span><span class="o">**</span><span class="mi">8</span><span class="p">)</span> <span class="o">+</span> <span class="n">comb</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.3</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.7</span><span class="o">**</span><span class="mi">8</span><span class="p">)</span>
-<span class="n">ans</span> <span class="o">=</span> <span class="n">p</span><span class="o">*</span><span class="n">q</span><span class="o">/</span><span class="n">r</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Probability of Coin B given 2 Heads &amp; 8 Tails = </span><span class="si">{:.4f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ans</span><span class="p">))</span> 
+<span class="n">p3</span> <span class="o">=</span> <span class="n">comb</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.3</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.7</span><span class="o">**</span><span class="mi">8</span><span class="p">)</span>
+<span class="n">q3</span> <span class="o">=</span> <span class="mf">0.5</span>
+<span class="n">r3</span> <span class="o">=</span> <span class="mf">0.5</span><span class="o">*</span><span class="n">comb</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.75</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.25</span><span class="o">**</span><span class="mi">8</span><span class="p">)</span> <span class="o">+</span> <span class="mf">0.5</span><span class="o">*</span><span class="n">comb</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.3</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.7</span><span class="o">**</span><span class="mi">8</span><span class="p">)</span>
+<span class="n">ans3</span> <span class="o">=</span> <span class="n">p3</span><span class="o">*</span><span class="n">q3</span><span class="o">/</span><span class="n">r3</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Probability of Coin B given 2 Heads &amp; 8 Tails = </span><span class="si">{:.4f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ans3</span><span class="p">))</span> 
 </pre></div>
 
      </div>
@@ -14447,7 +14457,7 @@ $$P(A|2_H8_T) = P(2_H8_T|A)*\frac{P(A)}{P(2_H8_T)}$$$$\implies P(A|2_H8_T) =\, ^
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Probability of Coin B given 2 Heads &amp; 8 Tails = 0.4992
+<pre>Probability of Coin B given 2 Heads &amp; 8 Tails = 0.9983
 </pre>
 </div>
 </div>
@@ -14464,11 +14474,11 @@ $$P(A|2_H8_T) = P(2_H8_T|A)*\frac{P(A)}{P(2_H8_T)}$$$$\implies P(A|2_H8_T) =\, ^
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Probabilty of Coin A given 2 heads &amp; 8 Tails</span>
 
-<span class="n">p</span> <span class="o">=</span> <span class="n">comb</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.75</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.25</span><span class="o">**</span><span class="mi">8</span><span class="p">)</span>
-<span class="n">q</span> <span class="o">=</span> <span class="mf">0.5</span>
-<span class="n">r</span> <span class="o">=</span> <span class="n">comb</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.75</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.25</span><span class="o">**</span><span class="mi">8</span><span class="p">)</span> <span class="o">+</span> <span class="n">comb</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.3</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.7</span><span class="o">**</span><span class="mi">8</span><span class="p">)</span>
-<span class="n">ans</span> <span class="o">=</span> <span class="n">p</span><span class="o">*</span><span class="n">q</span><span class="o">/</span><span class="n">r</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Probability of Coin A given 2 Heads &amp; 8 Tails = </span><span class="si">{:.4f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ans</span><span class="p">))</span> 
+<span class="n">p4</span> <span class="o">=</span> <span class="n">comb</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.75</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.25</span><span class="o">**</span><span class="mi">8</span><span class="p">)</span>
+<span class="n">q4</span> <span class="o">=</span> <span class="mf">0.5</span>
+<span class="n">r4</span> <span class="o">=</span> <span class="mf">0.5</span><span class="o">*</span><span class="n">comb</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.75</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.25</span><span class="o">**</span><span class="mi">8</span><span class="p">)</span> <span class="o">+</span> <span class="mf">0.5</span><span class="o">*</span><span class="n">comb</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.3</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mf">0.7</span><span class="o">**</span><span class="mi">8</span><span class="p">)</span>
+<span class="n">ans4</span> <span class="o">=</span> <span class="n">p4</span><span class="o">*</span><span class="n">q4</span><span class="o">/</span><span class="n">r4</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Probability of Coin A given 2 Heads &amp; 8 Tails = </span><span class="si">{:.4f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ans4</span><span class="p">))</span> 
 </pre></div>
 
      </div>
@@ -14488,7 +14498,7 @@ $$P(A|2_H8_T) = P(2_H8_T|A)*\frac{P(A)}{P(2_H8_T)}$$$$\implies P(A|2_H8_T) =\, ^
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Probability of Coin A given 2 Heads &amp; 8 Tails = 0.0008
+<pre>Probability of Coin A given 2 Heads &amp; 8 Tails = 0.0017
 </pre>
 </div>
 </div>
