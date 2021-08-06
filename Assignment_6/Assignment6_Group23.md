@@ -141,7 +141,7 @@ $${P}_Y(k) = \begin{cases}
 $${P}_{Y\le k}(k) = \begin{cases}
     1/2 & \text{if \quad}  0\le k \lt 1 \\ 
     3/4 & \text{if \quad}  1\le k \lt 4 \\
-    1 & \text{if \quad}  k = 4 \\
+    1 & \text{if \quad}  k \ge 4 \\
     0 & \text{otherwise}
 \end{cases}$$ <br>
 
