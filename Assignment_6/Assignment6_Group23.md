@@ -19,8 +19,6 @@ $$\implies P(X+Y = a) = \sum_{i=0}^{a} {[^nC_ip^i(1-p)^{n-i}}]\,[^mC_{a-i}p^{a-i
 
 $$\implies P(X+Y = a) = \sum_{i=0}^{a} {^nC_{i}\,^mC_{a-i}\,p^a(1-p)^{n+m-a}}$$ <br>
 
-#### As the Binomial experiments are independent, we have:
-
 $$\implies P(X+Y = a) = p^a(1-p)^{n+m-a}\sum_{i=0}^{a} {^nC_{i}\,^mC_{a-i}\,}$$ <br>
 
 #### Now, Vandermonde's identity states that: $\quad^{m+n}C_{r} = \sum_{k=0}^{r} {^mC_{k}\,^nC_{r-k}\,}$ <br>
