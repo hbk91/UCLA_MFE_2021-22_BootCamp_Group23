@@ -31,4 +31,8 @@ Assignment 4 </a>
 <a href= 'https://hbk91.github.io/UCLA_MFE_2021-22_BootCamp_Group23/Assignment_5/Assignment5_Group23.html' target='_blank'>
 Assignment 5 </a>
 </li>
+<li>
+<a href= 'https://hbk91.github.io/UCLA_MFE_2021-22_BootCamp_Group23/Assignment_6/Assignment6_Group23.html' target='_blank'>
+Assignment 6 </a>
+</li>
 </ol>
