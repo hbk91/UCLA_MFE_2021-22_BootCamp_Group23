@@ -27,7 +27,7 @@ $$\implies P(X+Y = a) = p^a(1-p)^{n+m-a}\sum_{i=0}^{a} {^nC_{i}\,^mC_{a-i}\,}$$ 
 
 $$\therefore P(X+Y = a) =\,^{m+n}C_{a}\, p^a(1-p)^{n+m-a}$$ <br>
 
-$$X+Y \sim Bin(n+m, p)  $$ <br>
+$$\implies X+Y \sim Bin(n+m, p)  $$ <br>
 
 #### Q.E.D.
 
@@ -55,9 +55,9 @@ $$P(X+Y = 5) = 0.1755 $$ <br>
 
 #### $X + Y = 5,$ can result from the following $(X,Y)$ combinations $(0,5), (1,4), (2,3), (3,2), (4,1), and\; (5,0).$
 
-- Thus Probability that $X = 4, Y = 1, \; given \; X + Y = 5$ would be the probability of the pair $(4, 1)$ divided by the sum of the probabilities of all the $(X,Y)$ that result in $X + Y = 5$ <br>
+- Thus Probability that $X = 4, Y = 1, \; given \; X + Y = 5$ would be the probability of the pair $(4, 1)$ divided by the sum of the probabilities of all the $(X,Y)$ pairs that result in $X + Y = 5$ <br>
 
-- The sum of all the $(X,Y)$ that result in $X + Y = 5$ is same the probability calculated in part (i) above.
+- The sum of all the $(X,Y)$ pairs that result in $X + Y = 5$ is same the probability calculated in part (i) above.
 
 #### Therefore, Probability that $X = 4, Y = 1, \; given \; X + Y = 5$ is:
 
@@ -123,7 +123,7 @@ $$ <br>
 
 $$\therefore \{Y=4\} = \{X=2\} \cup \{X=-2\}$$ <br>
 
-- In the above equation both the events on the RHS are disjoint
+- In the above equation the two events on the RHS are disjoint
   
   $$\therefore P(Y=4) = P(X=2) + P(X=-2) = 1/4$$
 
